@@ -1,7 +1,9 @@
 ---
-title: "Definitely Not A Dummy Blog Post"
-date: 2017-07-24T19:13:42+09:00
+title: "Definitely Not a Dummy Blog Post"
+date: 2018-02-10T17:13:24+09:00
 draft: true
+author: "Johan Lagerqvist"
+language: "en"
 ---
 
 Lorem ipsum dolor sit amet, _consectetur_ adipisicing elit. Ratione [dolorum adipisci](https://lgrqvst.com "Lorem ipsum dolor sit amet") modi assumenda in sint magnam accusantium voluptate aliquam mollitia sunt dolorem architecto veritatis earum culpa et officiis ea molestiae nulla commodi atque quos, necessitatibus optio tempore! ~~Perferendis aspernatur, esse.~~[^1] Molestiae natus _temporibus ducimus_ veritatis praesentium dolor necessitatibus unde voluptates!
