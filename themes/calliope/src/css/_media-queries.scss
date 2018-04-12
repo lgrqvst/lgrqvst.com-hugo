@@ -1,0 +1,89 @@
+// min-width
+@mixin min($width) {
+  @media screen and (min-width: $width + px) {
+    @content;
+  }
+}
+
+// max-width
+@mixin max($width) {
+  @media screen and (max-width: $width + px) {
+    @content;
+  }
+}
+
+// min-width
+@mixin minh($height) {
+  @media screen and (min-height: $height + px) {
+    @content;
+  }
+}
+
+// max-width
+@mixin maxh($height) {
+  @media screen and (max-height: $height + px) {
+    @content;
+  }
+}
+
+@mixin minboth($width, $height) {
+  @media screen and (min-width: $width + px) and (min-height: $height + px) {
+    @content;
+  }
+}
+
+@mixin maxboth($width, $height) {
+  @media screen and (max-width: $width + px) and (max-height: $height + px) {
+    @content;
+  }
+}
+
+// min-width and max-width
+@mixin minmax($width, $width) {
+  @media only screen and (min-width: $width + px) and (max-width: $width + px) {
+    @content;
+  }
+}
+
+// min-height and max-height
+@mixin minmaxh($height, $height) {
+  @media only screen and (min-height: $height + px) and (max-height: $height + px) {
+    @content;
+  }
+}
+
+/**
+ * From: https://css-tricks.com/between-the-lines/
+ *
+ * Computes a CSS calc function that betweens a value from
+ * A to B over viewport-width A to viewport-width B.
+ * Requires a media query to cap the value at B.
+ */
+
+@function between($from, $to, $fromWidth, $toWidth) {
+  $slope: ($from - $to) / ($fromWidth - $toWidth);
+  $base: $to - $slope * $toWidth;
+
+  @return calc(#{$base} + #{100vw * $slope});
+}
+
+$small: 320px;
+$large: 1280px;
+
+/**
+ * Mixin to apply base and media queried values
+ * for the between @function.
+ * Defaults to/from: $small/$large, but can be overridden.
+ */
+
+@mixin between($property, $from, $to, $fromWidth: $small, $toWidth: $large) {
+  #{$property}: $from;
+
+  @media (min-width: $fromWidth) {
+    #{$property}: between($from, $to, $small, $large);
+  }
+
+  @media (min-width: $toWidth) {
+    #{$property}: $to;
+  }
+}

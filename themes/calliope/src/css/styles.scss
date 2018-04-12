@@ -1,0 +1,61 @@
+/*
+ *  MIXINS
+ */
+
+@import "media-queries";
+@import "math";
+
+/*
+ *  RESETS
+ */
+
+@import "reset";
+
+img {
+  max-width: 100%;
+}
+
+// Some more resets
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+html, body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+// A better looking default horizontal rule
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ // Remove default fieldset styles.
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ *  MAIN STYLES
+ */
+
+ @import "base";
+
+/*
+ *  OTHER STYLES
+ */
+
+@import "helpers";
+@import "print";
