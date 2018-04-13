@@ -1,9 +1,6 @@
 ---
-title: "Lgrqvst"
-subtitle: ""
+title: Lgrqvst
 draft: false
-author: "Johan Lagerqvist"
-language: "en"
 ---
 
 This is lgrqvst.com, online home of me, Johan Lager­qvist, a Swe­dish ~~web de­sign­er~~ ~~graph­ic de­sign­er~~ ~~web de­velop­er~~ ~~pro­gram­mer~~ ~~game de­sign­er~~ ~~writer~~ ~~trans­lator~~ ~~musi­cian~~ ~~painter~~ ~~artist~~ ~~car­toon­ist~~ ~~maker~~ ~~creator~~ pro­crasti­nator liv­ing and work­ing in Osaka, Japan.

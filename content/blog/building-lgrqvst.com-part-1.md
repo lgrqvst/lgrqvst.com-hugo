@@ -1,10 +1,9 @@
 ---
-title: "Building Lgrqvst.com, Part I"
-subtitle: "Setting out"
+title: Building Lgrqvst.com, Part I
+subtitle: Setting Out
 date: 2018-04-12T16:05:16+09:00
+publishDate: 2018-04-12T16:05:16+09:00
 draft: false
-author: "Johan Lagerqvist"
-language: "en"
 tags: []
 comments: true
 ---

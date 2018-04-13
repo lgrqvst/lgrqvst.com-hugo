@@ -2,3 +2,6 @@ baseURL = "https://lgrqvst.com/"
 languageCode = "en-us"
 title = "Lgrqvst"
 theme = "calliope"
+
+[params]
+  author = "Johan Lagerqvist"

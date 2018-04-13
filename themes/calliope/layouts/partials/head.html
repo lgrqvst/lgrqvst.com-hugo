@@ -2,15 +2,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3, user-scalable=yes">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>LGRQVST</title>
 
-<meta name="title" content="">
+{{ if .IsHome }}
+  <title>{{ upper .Site.Title }}</title>
+  <meta name="title" content="{{ upper .Site.Title }}">
+  <meta property="og:title" content="{{ upper .Site.Title }}">
+  <meta name="twitter:title" content="{{ upper .Site.Title }}">
+{{ else }}
+  <title>{{ .Page.Title }} - {{ upper .Site.Title }}</title>
+  <meta name="title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
+  <meta property="og:title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
+  <meta name="twitter:title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
+{{ end }}
+
 <meta name="description" content="">
 
 <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"> -->
 
 <!-- Open Graph Protocol -->
-<!-- <meta property="og:title" content="">
+<!--
+<meta property="og:title" content="">
 <meta property="og:site_name" content="" />
 <meta property="og:type" content="website">
 <meta property="og:description" content="">
@@ -18,7 +29,8 @@
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content=""> -->
+<meta property="og:url" content="">
+-->
 <!-- More info: http://ogp.me/ -->
 <!-- More info: https://developers.facebook.com/docs/sharing/opengraph/using-objects -->
 <!-- More info: https://developers.facebook.com/docs/opengraph/getting-started -->
@@ -32,6 +44,8 @@
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="http://www.example.com/path/to/image.jpg"> -->
 <!-- More info: https://dev.twitter.com/cards/overview -->
+
+{{ .Hugo.Generator }}
 
 <link rel="shortcut icon" href="favicon.ico">
 
