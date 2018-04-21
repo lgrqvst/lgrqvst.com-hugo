@@ -5,11 +5,6 @@ date: 2018-02-10T17:13:24+09:00
 publishDate: 2018-02-10T17:13:24+09:00
 draft: true
 language: ja
-tags:
-- tags
-- go
-- in
-- here
 comments: true
 ---
 

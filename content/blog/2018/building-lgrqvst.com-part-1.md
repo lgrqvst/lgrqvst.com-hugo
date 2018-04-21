@@ -4,7 +4,9 @@ subtitle: Setting Out
 date: 2018-04-12T16:05:16+09:00
 publishDate: 2018-04-12T16:05:16+09:00
 draft: false
-tags: []
+categories:
+- Development
+- Lgrqvst.com
 comments: true
 ---
 
