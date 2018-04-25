@@ -2,6 +2,24 @@ baseURL = "https://lgrqvst.com/"
 languageCode = "en-us"
 title = "Lgrqvst"
 theme = "calliope"
+# hasCJKLanguage = true
+enableEmoji = true
+metaDataFormat = "yaml"
+paginate = 10
+paginatePath = "page"
+preserveTaxonomyNames = true
 
 [params]
-  author = "Johan Lagerqvist"
+  authorFirstName = "Johan"
+  authorLastName = "Lagerqvist"
+  authorFullName = "Johan Lagerqvist"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  motif = "motifs"
+  theme = "themes"
+
+[permalinks]
+  blog = "/:year/:month/:title/"
+  stuff = "/:title/"
