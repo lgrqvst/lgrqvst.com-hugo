@@ -29,7 +29,7 @@ First, what _are_ the content types?
 
    For items in the portfolio. This has low priority for now, but I'm gonna try to keep in the back of my mind.
 
-- `~~stuff/~~`
+- ~~`stuff/`~~
 
    ~~I'll probably call it something else (I'll definitely call it something else---maybe 'art' or 'creative'? Or something? 'creations'? 'works'? 'opuses'? Or maybe go for something more... conceptual? Figurative? 'inventory'? 'trove'? 'collection'? 'pile'? 'bank'? 'vault'? 'hoard'?), but basically this is for _things_ I make, whatever shape or form they may take. Maybe set up different sub-sections or categories (or types?) for different kinds of content. Maybe even more than one "root" section??? Jeez, I don't know. Maybe I'm thinking about this too hard.~~
 

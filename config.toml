@@ -20,5 +20,6 @@ preserveTaxonomyNames = true
   motif = "motifs"
   theme = "themes"
 
-# [permalinks]
-  # post = "/:title/"
+[permalinks]
+  post = "/:section/:filename/"
+  page = "/:filename/"
