@@ -8,6 +8,7 @@ categories:
 - Web Development
 tags:
 - lgrqvst.com
+- purpose
 comments: true
 ---
 

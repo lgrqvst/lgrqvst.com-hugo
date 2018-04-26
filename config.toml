@@ -20,6 +20,5 @@ preserveTaxonomyNames = true
   motif = "motifs"
   theme = "themes"
 
-[permalinks]
-  blog = "/:year/:month/:title/"
-  stuff = "/:title/"
+# [permalinks]
+  # post = "/:title/"

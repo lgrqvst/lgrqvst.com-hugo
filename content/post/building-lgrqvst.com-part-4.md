@@ -23,7 +23,7 @@ My current thinking is to have five basic design templates to begin with:
 
 - List page
 
-   For all the things belonging to a category, or a theme or a motif, etc. Should have the _logo_, _navigation_, maybe a brief _description of the taxonomy term_, relevant content in a _scannable list_, and the _footer_.
+   For all the things belonging to a category, tag, theme, motif, etc. Should have the _logo_, _navigation_, maybe a brief _description of the taxonomy term_, relevant content in a _scannable list_, and the _footer_.
 
 - Single blog post
 
@@ -31,4 +31,4 @@ My current thinking is to have five basic design templates to begin with:
 
 - Single 'art' thing
 
-   When viewing a single thing I made (based on the category or post type of the content item). Should have the _logo_, _navigation__, _the thing_, and the _footer_. The presentation of the thing depends on the type of the thing. Again, maybe _links_ to similar content?
+   When viewing a single thing I made (based on the category or post type of the content item). Should have the _logo_, _navigation__, _the thing_, and the _footer_. The presentation of the thing depends on the type of the thing. Again, maybe _links_ to similar content? This should basically be similar to the single blog post template but be customized to put the art thingy front and center.
