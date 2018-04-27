@@ -13,6 +13,7 @@ preserveTaxonomyNames = true
   authorFirstName = "Johan"
   authorLastName = "Lagerqvist"
   authorFullName = "Johan Lagerqvist"
+  description = "Online home of procrastinator Johan Lagerqvist"
 
 [taxonomies]
   category = "categories"

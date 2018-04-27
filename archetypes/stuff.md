@@ -4,7 +4,7 @@ subtitle:
 date: {{ .Date }}
 publishDate: {{ .Date }}
 draft: true
-category: 
+categories: 
 tags:
 motifs:
 themes:

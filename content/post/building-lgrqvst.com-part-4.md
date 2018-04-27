@@ -1,6 +1,6 @@
 ---
 title: Building Lgrqvst.com, Part IV
-subtitle: Design
+subtitle: Page Contents
 date: 2018-04-21T16:52:15+09:00
 publishDate: 2018-04-21T16:52:15+09:00
 draft: true
