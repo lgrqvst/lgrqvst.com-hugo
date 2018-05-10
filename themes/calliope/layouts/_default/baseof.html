@@ -6,7 +6,7 @@
   <body class="{{ if .IsHome }}page-home{{ end }}">
     {{ partial "nav.html" . }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
-    <main>
+    <main class="sitemain">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
