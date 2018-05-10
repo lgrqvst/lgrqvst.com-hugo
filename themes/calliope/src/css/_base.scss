@@ -21,9 +21,21 @@ body {
   // background: rgba(253,250,247,1);
 
   display: grid;
-  grid-template-columns: 1fr 8rem minmax(11rem, 55rem) 1rem 2rem 4rem minmax(2rem, 1fr);
-  grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem auto 2rem 1fr 2rem auto;
   grid-template-areas:
+    "n"
+    "h"
+    "."
+    "m"
+    "."
+    "f";
+
+  @include min(640) {
+    grid-template-columns: 1fr 7rem minmax(11rem, 56rem) 1rem 2rem 4rem minmax(2rem, 1fr);
+    grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
+    grid-template-areas:
     ". . . . . n ."
     "h h h h . n ."
     "h h h h . . ."
@@ -33,29 +45,49 @@ body {
     ". . . . . . ."
     ". f f f f f f"
     ". . . . . . .";
+  }
+
 }
 
 .siteheader {
   grid-area: h;
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 55rem) minmax(1rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) 7rem minmax(11rem, 56rem) 1rem;
+  min-width: 20rem;
   background: black;
   & > .inner {
     color: white;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
   }
   h1 {
-    font-size: 4rem;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 4em;
+    // @include between(font-size, 3.5em, 6em);
+
+    background: url(../img/logo2.min.svg) no-repeat left top;
+    background-size: 1.5em;
+    padding: calc(1.5em + 0.5rem) 0 0 0;
+
+
+    @include min(768) {
+      background-position: left center;
+      padding: 0 0 0 calc(1.5em + 1rem);
+    }
+
   }
   p {
-    font-size: 1.25rem;
     max-width: 40em;
     margin: 1rem 0;
+
+    @include between(font-size, 0.875em, 1.25em);
   }
 }
 
 .sitenav {
+  position: sticky;
+  top: 0;
   grid-area: n;
   background: white;
   // display: flex;
@@ -68,10 +100,12 @@ body {
   display: block;
   width: 3rem;
   height: 3rem;
-  margin: 2rem auto 0;
   overflow: hidden;
   transition: 250ms;
   box-shadow: 0 0 0 0 black inset;
+  @include min(640) {
+    margin: 2rem auto 0;
+  }
   &:hover {
     background: black;
     box-shadow: 0 0 0 0.5rem black inset;
@@ -82,7 +116,7 @@ body {
   span, &:before, &:after {
     position: absolute;
     display: block;
-    width: 1rem;
+    width: 1.5rem;
     height: 1px;
     left: 50%;
     background: black;
@@ -91,7 +125,6 @@ body {
   }
   span {
     top: 50%;
-    // transform: translate(-50%, -50%);
     text-indent: -999px;
   }
   &:before, &:after {

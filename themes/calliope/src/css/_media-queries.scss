@@ -1,53 +1,53 @@
 // min-width
 @mixin min($width) {
-  @media screen and (min-width: $width + px) {
+  @media screen and (min-width: #{$width / 16} + em) {
     @content;
   }
 }
 
 // max-width
 @mixin max($width) {
-  @media screen and (max-width: $width + px) {
+  @media screen and (max-width: #{$width / 16} + em) {
     @content;
   }
 }
 
 // min-width
 @mixin minh($height) {
-  @media screen and (min-height: $height + px) {
+  @media screen and (min-height: #{$height / 16} + em) {
     @content;
   }
 }
 
 // max-width
 @mixin maxh($height) {
-  @media screen and (max-height: $height + px) {
+  @media screen and (max-height: #{$height / 16} + em) {
     @content;
   }
 }
 
 @mixin minboth($width, $height) {
-  @media screen and (min-width: $width + px) and (min-height: $height + px) {
+  @media screen and (min-width: #{$width / 16} + em) and (min-height: #{$height / 16} + em) {
     @content;
   }
 }
 
 @mixin maxboth($width, $height) {
-  @media screen and (max-width: $width + px) and (max-height: $height + px) {
+  @media screen and (max-width: #{$width / 16} + em) and (max-height: #{$height / 16} + em) {
     @content;
   }
 }
 
 // min-width and max-width
 @mixin minmax($width, $width) {
-  @media only screen and (min-width: $width + px) and (max-width: $width + px) {
+  @media only screen and (min-width: #{$width / 16} + em) and (max-width: #{$width / 16} + em) {
     @content;
   }
 }
 
 // min-height and max-height
 @mixin minmaxh($height, $height) {
-  @media only screen and (min-height: $height + px) and (max-height: $height + px) {
+  @media only screen and (min-height: #{$height / 16} + em) and (max-height: #{$height / 16} + em) {
     @content;
   }
 }
@@ -67,8 +67,10 @@
   @return calc(#{$base} + #{100vw * $slope});
 }
 
-$small: 320px;
-$large: 1280px;
+// $small: 320px;
+$small: 20em;
+// $large: 1280px;
+$large: 80em;
 
 /**
  * Mixin to apply base and media queried values

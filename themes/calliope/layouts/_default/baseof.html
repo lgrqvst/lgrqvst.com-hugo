@@ -3,7 +3,7 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body class="{{ if .IsHome }}page-home{{ end }}">
+  <body class="kind-{{ .Kind }} type-{{ .Type }} language-{{ .Lang }} {{ if .Draft }}draft{{ end }}">
     {{ partial "nav.html" . }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main class="sitemain">
