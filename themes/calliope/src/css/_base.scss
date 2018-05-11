@@ -22,24 +22,26 @@ body {
 
   display: grid;
 
-  grid-template-columns: 1fr;
-  grid-template-rows: 3rem auto 2rem 1fr 2rem auto;
+  grid-template-columns: 8rem 1fr;
+  grid-template-rows: 3rem 2rem 8rem auto 2rem 1fr 2rem auto;
   grid-template-areas:
-    "n"
-    "h"
-    "."
-    "m"
-    "."
-    "f";
+  "n n"
+  ". ."
+  "h ."
+  ". ."
+  ". ."
+  "m m"
+  ". ."
+  "f f";
 
   @include min(640) {
     grid-template-columns: 1fr 7rem minmax(11rem, 56rem) 1rem 2rem 4rem minmax(2rem, 1fr);
     grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
     grid-template-areas:
     ". . . . . n ."
-    "h h h h . n ."
-    "h h h h . . ."
-    "h h h h . . ."
+    "h h . . . n ."
+    "h h . . . . ."
+    ". . . . . . ."
     ". . . . . . ."
     "m m m m m m m"
     ". . . . . . ."
@@ -47,41 +49,114 @@ body {
     ". . . . . . .";
   }
 
+  &.kind-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem auto 2rem 1fr 2rem auto;
+    grid-template-areas:
+    "n"
+    "h"
+    "."
+    "m"
+    "."
+    "f";
+
+    @include min(640) {
+      grid-template-columns: 1fr 7rem minmax(11rem, 56rem) 1rem 2rem 4rem minmax(2rem, 1fr);
+      grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
+      grid-template-areas:
+      ". . . . . n ."
+      "h h h h . n ."
+      "h h h h . . ."
+      "h h h h . . ."
+      ". . . . . . ."
+      "m m m m m m m"
+      ". . . . . . ."
+      ". f f f f f f"
+      ". . . . . . .";
+    }
+  }
+
+
 }
 
 .siteheader {
+  background: black;
   grid-area: h;
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) 7rem minmax(11rem, 56rem) 1rem;
-  min-width: 20rem;
-  background: black;
+  grid-template-columns: minmax(1rem, 1fr) 7rem;
+  z-index: 2;
+  min-width: 8rem;
   & > .inner {
-    color: white;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .kind-home & {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) 7rem minmax(11rem, 56rem) 1rem;
+    min-width: 20rem;
+    & > .inner {
+      color: white;
+      grid-column: 2 / 4;
+    }
+    h1 {
+      margin: 1rem 0;
+      line-height: 1.5;
+      font-weight: 700;
+      font-size: 4em;
+      // @include between(font-size, 3.5em, 6em);
+
+      background: url(../img/logo2.min.svg) no-repeat left top;
+      background-size: 1.5em;
+      padding: calc(1.5em + 0.5rem) 0 0 0;
+
+
+      @include min(768) {
+        background-position: left center;
+        padding: 0 0 0 calc(1.5em + 1rem);
+      }
+
+    }
+    p {
+      max-width: 40em;
+      margin: 1rem 0;
+
+      @include between(font-size, 0.875em, 1.25em);
+    }
+  }
+  .logo {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem 0;
+  }
+}
+
+.pageheader {
+  z-index: 1;
+  background: #ddd;
+  grid-area: 2 / 1 / 5 / -1;
+  background-position: center;
+  background-size: cover;
+  @include min(640) {
+    grid-area: 1 / 1 / 5 / -1;
+  }
+  display: grid;
+  grid-template-rows: 13rem minmax(0px, auto) 3rem;
+  grid-template-columns: minmax(0.5rem, 1fr) 7rem minmax(11rem, 56rem) 7rem minmax(2rem, 1fr);
+  grid-template-areas:
+    ". . . . ."
+    ". t t t ."
+    ". . . . .";
+  .inner {
+    grid-area: t;
   }
   h1 {
-    margin: 1rem 0;
-    line-height: 1.5;
+    margin: 0;
+    line-height: 1.2;
+    // font-size: 4rem;
+    @include between(font-size, 3em, 6em);
     font-weight: 700;
-    font-size: 4em;
-    // @include between(font-size, 3.5em, 6em);
-
-    background: url(../img/logo2.min.svg) no-repeat left top;
-    background-size: 1.5em;
-    padding: calc(1.5em + 0.5rem) 0 0 0;
-
-
-    @include min(768) {
-      background-position: left center;
-      padding: 0 0 0 calc(1.5em + 1rem);
-    }
-
-  }
-  p {
-    max-width: 40em;
-    margin: 1rem 0;
-
-    @include between(font-size, 0.875em, 1.25em);
+    color: white;
+    text-shadow: 0 0 1rem rgba(0,0,0,1);
   }
 }
 
@@ -89,6 +164,7 @@ body {
   position: sticky;
   top: 0;
   grid-area: n;
+  z-index: 3;
   background: white;
   // display: flex;
   // justify-content: flex-end;
