@@ -7,6 +7,7 @@ comments: false
 headerimage_src: header-about.jpg
 headerimage_description: View south from Umeda Sky Building in Osaka, Japan.
 headerimage_credit: Johan Lagerqvist
+headerimage_credit_url: https://lgrqvst.com
 ---
 
 About me and this site.
