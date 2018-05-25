@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, {
-  font-family: "Oswald", sans-serif;
+  font-family: $font_title;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -100,6 +100,7 @@ body {
     }
     h1 {
       margin: 1rem 0;
+
       line-height: 1.5;
       font-weight: 700;
       font-size: 4em;
@@ -108,7 +109,6 @@ body {
       background: url(../img/logo2.min.svg) no-repeat left top;
       background-size: 1.5em;
       padding: calc(1.5em + 0.5rem) 0 0 0;
-
 
       @include min(768) {
         background-position: left center;
@@ -123,6 +123,7 @@ body {
       @include between(font-size, 0.875em, 1.25em);
     }
   }
+
   .logo {
     width: 6rem;
     height: 6rem;
