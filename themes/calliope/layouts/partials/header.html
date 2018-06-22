@@ -12,6 +12,8 @@
 {{ else }}
 
 {{ $headerimage_src := .Param "headerimage_src" | default ""}}
+{{ $headerimage_credit := .Param "headerimage_credit" | default ""}}
+{{ $headerimage_credit_url := .Param "headerimage_credit_url" | default ""}}
 
 <div class="siteheader">
   <div class="inner">
@@ -23,6 +25,12 @@
   <div class="inner">
     <h1>{{ .Title }}</h1>
   </div>
+
+  {{ if isset .Params "headerimage_credit" }}
+    <a href="{{ if isset .Params "headerimage_credit_url" }}{{ $headerimage_credit_url }}{{ else }}javascript:;{{ end }}" target="_blank" class="headerimage_credit">
+      {{ $headerimage_credit }}
+    </a>
+  {{ end }}
 </header>
 
 {{ end }}

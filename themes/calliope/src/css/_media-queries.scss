@@ -82,7 +82,7 @@ $large: 80em;
   #{$property}: $from;
 
   @media (min-width: $fromWidth) {
-    #{$property}: between($from, $to, $small, $large);
+    #{$property}: between($from, $to, $fromWidth, $toWidth);
   }
 
   @media (min-width: $toWidth) {

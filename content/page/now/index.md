@@ -4,10 +4,20 @@ date: 2018-04-13T18:29:32+09:00
 draft: true
 tags: []
 comments: false
-headerimage_src: header-now.jpg
-headerimage_description: View south from Umeda Sky Building in Osaka, Japan.
-headerimage_credit: Johan Lagerqvist
-headerimage_credit_url: https://lgrqvst.com
+headerimage_src:
+headerimage_description:
+headerimage_credit:
+headerimage_credit_url:
 ---
 
-What I'm into right now.
+Here's what I'm into right now:
+
+- Building this site with Hugo
+- CSS Grid
+- Pillars of Eternity
+- DIY
+- Croquis
+- Leftism
+- Bullet Journal-ing
+
+Currently reading: The Shock Doctrine by Naomi Klein

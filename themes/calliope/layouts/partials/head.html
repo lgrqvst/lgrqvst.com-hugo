@@ -9,10 +9,10 @@
   <meta property="og:title" content="{{ upper .Site.Title }}">
   <meta name="twitter:title" content="{{ upper .Site.Title }}">
 {{ else }}
-  <title>{{ .Page.Title }} - {{ upper .Site.Title }}</title>
-  <meta name="title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
-  <meta property="og:title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
-  <meta name="twitter:title" content="{{ .Page.Title }} - {{ upper .Site.Title }}">
+  <title>{{ .Page.Title }} &middot; {{ upper .Site.Title }}</title>
+  <meta name="title" content="{{ .Page.Title }} &middot; {{ upper .Site.Title }}">
+  <meta property="og:title" content="{{ .Page.Title }} &middot; {{ upper .Site.Title }}">
+  <meta name="twitter:title" content="{{ .Page.Title }} &middot; {{ upper .Site.Title }}">
 {{ end }}
 
 <meta name="description" content="">
