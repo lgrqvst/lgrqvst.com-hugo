@@ -1,7 +1,7 @@
 ---
 title: To Do
 date: 2018-06-22T18:16:00+09:00
-draft: true
+draft: false
 tags: []
 comments: false
 headerimage_src: header-todo.jpg

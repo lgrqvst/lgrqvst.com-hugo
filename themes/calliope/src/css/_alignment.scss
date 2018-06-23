@@ -1,0 +1,60 @@
+.sitemain {
+  .align-left, .align-right, .align-middle, .align-narrow, .align-wide, .align-pop-left, .align-pop-right {
+    grid-column: 1 / -1;
+  }
+
+  .align-left {
+    text-align: right;
+  }
+
+  .align-right, .align-middle {
+    text-align: left;
+  }
+
+  .align-wide, .align-narrow, .align-pop-left, .align-pop-right {
+    text-align: center;
+  }
+
+  @include min(640) {
+    .align-left, .align-right, .align-middle {
+      grid-column: 2 / 4;
+    }
+
+    .align-narrow, .align-pop-left, .align-pop-right {
+      grid-column: 2 / 3;
+    }
+  }
+
+  @include min(768) {
+    .align-pop-right {
+      grid-column: 3 / 4;
+      position: relative;
+      & > * {
+        position: absolute;
+        top: 0; left: 1rem;
+        max-width: calc(100% - 1rem);
+      }
+    }
+  }
+
+  @include min(1152) {
+    .align-left {
+      grid-column: 1 / 3;
+    }
+    .align-right {
+      grid-column: 2 / -1;
+    }
+  }
+
+  @include min(1360) {
+    .align-pop-left {
+      grid-column: 1 / 2;
+      position: relative;
+      & > * {
+        position: absolute;
+        top: 0; right: 1rem;
+        max-width: calc(100% - 1rem);
+      }
+    }
+  }
+}

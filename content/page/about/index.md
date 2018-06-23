@@ -12,7 +12,7 @@ headerimage_credit_url: https://unsplash.com/photos/CO-rNFAVsRU
 
 <!-- About me and this site. -->
 
-<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nisi doloribus odit beatae. Quidem recusandae magni maiores aliquid hic voluptates laboriosam alias, ea quod beatae, excepturi quis voluptas nam aperiam animi quos ratione! Quos animi, commodi tempore pariatur aut odio.</p>
+<p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nisi doloribus odit beatae. Quidem recusandae magni maiores aliquid hic voluptates laboriosam alias, ea quod beatae, excepturi quis voluptas nam aperiam animi quos ratione! Quos animi, commodi tempore pariatur aut odio.</p>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptas quasi autem, velit, mollitia itaque. Minus iste sequi suscipit voluptas labore fugit eos perspiciatis, beatae corporis quibusdam quos ipsum eaque laborum recusandae culpa natus esse sint, enim iusto velit placeat asperiores, harum omnis. Omnis voluptates, perspiciatis sed minus iusto perferendis! Repudiandae odio dolor maxime nisi dolorem quisquam magnam placeat laborum sed ut. Amet ducimus ea alias aspernatur cum fugit quas deleniti. Temporibus, ipsa, minima. Omnis maxime porro vel quam, repudiandae, nam officia! Minima corporis eum atque tempora doloribus facere assumenda, veritatis eos mollitia est nostrum, distinctio consequuntur harum, et. Alias?
 

@@ -1,7 +1,7 @@
 ---
 title: Now
 date: 2018-04-13T18:29:32+09:00
-draft: true
+draft: false
 tags: []
 comments: false
 headerimage_src: header-now.jpg
