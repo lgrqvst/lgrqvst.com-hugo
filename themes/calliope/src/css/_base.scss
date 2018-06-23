@@ -151,7 +151,7 @@ body {
   border-bottom: 1rem solid white;
 
   display: grid;
-  grid-template-rows: 13rem minmax(0px, auto) 3rem;
+  grid-template-rows: 11.5rem minmax(0px, auto) 1.5rem;
   grid-template-columns: minmax(0.5rem, 1fr) minmax(18rem, 70rem) minmax(0.5rem, 1fr);
   // grid-template-columns: minmax(0.5rem, 1fr) 7rem minmax(11rem, 56rem) 7rem minmax(2rem, 1fr);
   grid-template-areas:
@@ -162,7 +162,16 @@ body {
   @include min(640) {
     grid-area: 1 / 1 / 5 / -1;
 
+    grid-template-rows: 11.5rem minmax(0px, auto) 2rem;
     grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 70rem) minmax(1rem, 1fr);
+  }
+
+  @include min(776) {
+    grid-template-rows: 12.5rem minmax(0px, auto) 3rem;
+  }
+
+  .type-page & {
+    grid-template-rows: 12.5rem minmax(0px, auto) 3rem;
   }
 
   .inner {
@@ -171,11 +180,13 @@ body {
   h1 {
     margin: 0;
     line-height: 1.2;
-    // font-size: 4rem;
-    @include between(font-size, 3em, 6em);
+    @include between(font-size, 2.5em, 4em);
     font-weight: 700;
     color: white;
     text-shadow: 0 0 1rem rgba(0,0,0,1);
+    .type-page & {
+      @include between(font-size, 3em, 6em);
+    }
   }
 }
 
@@ -244,88 +255,6 @@ body {
     top: calc(50% + 0.5rem);
   }
 }
-
-.sitemain {
-  grid-area: m;
-
-  @include between(font-size, 0.875rem, 1rem, 20rem, 80rem);
-
-  display: grid;
-  grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 45rem) auto minmax(0.5rem, 1fr);
-  align-content: start;
-
-  @include min(640) {
-    grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
-    // grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 70em) minmax(1rem, 1fr);
-  }
-
-  p, ul, figure {
-    grid-column: 2 / 3;
-  }
-
-  p {
-    margin: 0 0 1.2em;
-    line-height: 1.8;
-  }
-
-  figure {
-    margin: 0 0 1.2em;
-  }
-
-  ul {
-    margin: 0 0 1.2em;
-    padding: 0 0 0 1.5em;
-  }
-
-}
-
-.lede + p:first-letter {
-  font-size: 5.6em;
-  line-height: 0.33;
-  float:left;
-  margin: 0.33em 0.5rem 0 0rem;
-  // color: white;
-  // text-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
-}
-
-// .lede + p:first-line {
-//   font-variant: small-caps;
-// }
-
-p.lede {
-  font-size: 1.25em;
-  grid-column: 2 / 4;
-  max-width: 55rem;
-  margin: 0.8em 0 2.4em;
-
-  background: rgba(255,255,255,0.5);
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1), 0 0 2rem rgba(255,255,255,0.33) inset;
-  padding: 0.8em;
-
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    top: -10rem;
-    left: -10rem;
-    z-index: -1;
-    display: block;
-    width: 788px;
-    max-width: calc(100% + 10.5rem);
-    height: 600px;
-    background: url(../img/paint1.png);
-    // opacity: 0.33;
-  }
-}
-
-ul.task-list {
-  list-style: none;
-  padding: 0;
-}
-
-
-
-
 
 .sitefooter {
   grid-area: f;

@@ -1,0 +1,109 @@
+.sitemain {
+  grid-area: m;
+
+  @include between(font-size, 0.875rem, 1rem, 20rem, 80rem);
+
+  display: grid;
+  grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 45rem) auto minmax(0.5rem, 1fr);
+  align-content: start;
+
+  @include min(640) {
+    grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
+    // grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 70em) minmax(1rem, 1fr);
+  }
+
+  p, ul, ol, figure, h1, h2, h3, h4, h5, h6, blockquote, table, dl, pre, hr, & > div {
+    grid-column: 2 / 3;
+  }
+
+  p, ul, ol, figure, blockquote, table, dl, pre, hr, & > div {
+    margin: 0 0 1.2em;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  ul, ol {
+    padding: 0 0 0 1.5em;
+  }
+
+  table {
+    border: 1px solid #222;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #222;
+  }
+
+  a {
+    background: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+    &:hover {
+      background: rgba(0,0,0,1);
+      color: rgba(255,255,255,1);
+    }
+  }
+
+}
+
+.footnotes {
+  a {
+    background: none;
+    sup {
+      background: rgba(255,255,255,1);
+    }
+    &:hover {
+      background: none;
+      sup {
+        background: rgba(0,0,0,1);
+      }
+    }
+  }
+}
+
+.lede + p:first-letter {
+  font-size: 5.6em;
+  line-height: 0.33;
+  float:left;
+  margin: 0.33em 0.5rem 0 0rem;
+  // color: white;
+  // text-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+}
+
+// .lede + p:first-line {
+//   font-variant: small-caps;
+// }
+
+p.lede {
+  font-size: 1.25em;
+  grid-column: 2 / 4;
+  max-width: 55rem;
+  margin: 0.8em 0 2.4em;
+
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1), 0 0 2rem rgba(255,255,255,0.33) inset;
+  padding: 0.8em;
+
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    z-index: -1;
+    display: block;
+    width: 788px;
+    max-width: calc(100% + 10.5rem);
+    height: 600px;
+    background: url(../img/paint1.png);
+    // opacity: 0.33;
+  }
+}
+
+ul.task-list {
+  list-style: none;
+  padding: 0;
+}
