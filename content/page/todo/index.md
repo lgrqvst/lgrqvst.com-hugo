@@ -6,8 +6,8 @@ tags: []
 comments: false
 headerimage_src: header-todo.jpg
 headerimage_description:
-headerimage_credit:
-headerimage_credit_url:
+headerimage_credit: Photo by Paul Gilmore
+headerimage_credit_url: https://unsplash.com/photos/0NetIOwaEqQ
 ---
 
 Here's what needs doing to bring this ship to port.
