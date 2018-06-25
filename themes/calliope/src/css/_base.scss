@@ -1,15 +1,28 @@
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, {
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
   font-family: $font_title;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-h1,.h1 {}
-h2,.h2 {}
-h3,.h3 {}
-h4,.h4 {}
-h5,.h5 {}
-h6,.h6 {}
+h1,.h1 {
+  font-size: 3em;
+}
+h2,.h2 {
+  font-size: 2.5em;
+}
+h3,.h3 {
+  font-size: 2em;
+}
+h4,.h4 {
+  font-size: 1.5em;
+}
+h5,.h5 {
+  font-size: 1.25em;
+}
+h6,.h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
 
 .display1 {}
 .display2 {}
@@ -101,9 +114,14 @@ body {
 
   .kind-home & {
     display: grid;
-    grid-template-columns: minmax(1rem, 1fr) 7rem minmax(11rem, 56rem) 1rem;
+    grid-template-columns: minmax(0.5rem, 1fr) 7rem minmax(11rem, 56rem) 0.5rem;
     min-width: 20rem;
     padding: 1rem 0;
+
+    @include min(640) {
+      grid-template-columns: minmax(1rem, 1fr) 7rem minmax(11rem, 56rem) 1rem;
+    }
+
     & > .inner {
       color: white;
       grid-column: 2 / 4;
@@ -144,7 +162,7 @@ body {
 .pageheader {
   position: relative;
   z-index: 1;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   grid-area: 2 / 1 / 5 / -1;
   background-position: center;
   background-size: cover;
@@ -175,8 +193,10 @@ body {
   }
 
   .inner {
+    position: relative;
     grid-area: t;
   }
+
   h1 {
     margin: 0;
     line-height: 1.2;
@@ -186,6 +206,24 @@ body {
     text-shadow: 0 0 1rem rgba(0,0,0,1);
     .type-page & {
       @include between(font-size, 3em, 6em);
+    }
+  }
+
+  .subtitle {
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    left: 0;
+    margin: 0;
+    padding: 0 0.5rem;
+    background: rgba(255,255,255,1);
+    transform: translateY(-33%);
+    @include between(font-size, 1.5rem, 2rem, 20rem, 80rem);
+
+    @include min(640) {
+      top: calc(100% + 2rem);
+    }
+    @include min(776) {
+      top: calc(100% + 3rem);
     }
   }
 }

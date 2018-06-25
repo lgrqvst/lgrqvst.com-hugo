@@ -1,9 +1,9 @@
 ---
 title: Building Lgrqvst.com, Part IV
-subtitle: Page Contents
+subtitle: Page Elements
 date: 2018-04-21T16:52:15+09:00
 publishDate: 2018-04-21T16:52:15+09:00
-draft: true
+draft: false
 categories:
 - Web Development
 tags:
@@ -11,7 +11,8 @@ tags:
 comments: true
 ---
 
-My current thinking is to have five basic design templates to begin with:
+My current thinking is to have five basic design templates to begin with, as follows:
+<!--more-->
 
 - Home page
 
@@ -31,4 +32,4 @@ My current thinking is to have five basic design templates to begin with:
 
 - Single 'art' thing
 
-   When viewing a single thing I made (based on the category or post type of the content item). Should have the _logo_, _navigation__, _the thing_, and the _footer_. The presentation of the thing depends on the type of the thing. Again, maybe _links_ to similar content? This should basically be similar to the single blog post template but be customized to put the art thingy front and center.
+   When viewing a single thing I made (based on the category or post type of the content item). Should have the _logo_, _navigation_, _the thing_, and the _footer_. The presentation of the thing depends on the type of the thing. Again, maybe _links_ to similar content? This should basically be similar to the single blog post template but be customized to put the art thingy front and center.

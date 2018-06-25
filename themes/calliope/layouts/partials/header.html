@@ -23,7 +23,10 @@
 
 <header class="pageheader" style="background-image: url({{ $headerimage_src }})">
   <div class="inner">
-    <h1>{{ .Title }}</h1>
+    <h1>
+      {{ .Title }}
+    </h1>
+    {{ with .Param "subtitle" }}<p class="subtitle h3">{{ . }}</p>{{ end }}
   </div>
 
   {{ if isset .Params "headerimage_credit" }}

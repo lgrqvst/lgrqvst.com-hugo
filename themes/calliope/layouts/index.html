@@ -1,3 +1,24 @@
 {{ define "main" }}
-  {{ .Content }}
+
+{{ with .Content }}
+  <div class="temporary-home-page-menu">
+    {{.}}
+  </div>
+{{ end }}
+
+{{ $posts := .Paginate (where .Data.Pages "Type" "post") }}
+{{ range first 10 $posts.Pages }}
+  <div>
+    <h2>{{ .Title }}</h2>
+    <div>{{ .Date }}</div>
+    <div>{{ .Summary }}</div>
+    {{ if .Truncated }}
+      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+      <div>
+        <a href="{{ .Permalink }}">Read More…</a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
 {{ end }}

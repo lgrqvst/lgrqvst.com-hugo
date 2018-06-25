@@ -11,5 +11,6 @@ headerimage_credit_url: https://unsplash.com/photos/0NetIOwaEqQ
 ---
 
 Here's what needs doing to bring this ship to port.
+<!--more-->
 
 - [ ] Make a to-do list

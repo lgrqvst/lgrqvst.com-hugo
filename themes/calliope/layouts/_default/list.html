@@ -1,3 +1,25 @@
 {{ define "main" }}
-List template
+
+{{ with .Content }}
+  <div class="well">
+    {{.}}
+  </div>
+{{ end }}
+
+  {{ range .Paginator.Pages }}
+    <div>
+      <h2>{{ .Title }}</h2>
+      <div class="summary">
+        {{ .Summary }}
+      </div>
+
+      {{ if .Truncated }}
+        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+        <div>
+          <a href="{{ .Permalink }}">Read More…</a>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
 {{ end }}

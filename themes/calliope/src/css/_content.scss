@@ -20,8 +20,22 @@
     margin: 0 0 1.2em;
   }
 
+  h2,h3,h4,h5,h6 {
+    margin: 0.5em 0 0;
+  }
+
+  h2 { margin-bottom: 0.48em; }
+  h3 { margin-bottom: 0.6em; }
+  h4 { margin-bottom: 0.8em; }
+  h5 { margin-bottom: 0.96em; }
+  h6 { margin-bottom: 1.2em; }
+
   p {
     line-height: 1.8;
+  }
+
+  pre {
+    overflow: auto;
   }
 
   ul, ol {
@@ -37,19 +51,47 @@
     border: 1px solid #222;
   }
 
+  blockquote {
+    background: rgba(255,255,255,0.5);
+    font-size: 0.875em;
+    padding: 0.5em 1em;
+    p {
+      margin: 0.5em 0;
+    }
+    cite {
+      display: block;
+      text-align: right;
+      &:before {
+        content: "-"
+      }
+    }
+  }
+
   a {
     background: rgba(255,255,255,1);
     color: rgba(0,0,0,1);
     text-decoration: none;
+    // text-shadow: 0 0 0 rgba(255,255,0,1), 0 0 0 rgba(0,255,255,1), 0 0 0 rgba(255,0,255,1);
+    // transition: 0.15s;
     &:hover {
       background: rgba(0,0,0,1);
       color: rgba(255,255,255,1);
+      // text-shadow: -0.25rem -0.25rem 0 rgba(255,255,0,1), -0.25rem 0.25rem 0 rgba(0,255,255,1), 0.25rem -0.25rem 0 rgba(255,0,255,1);
+    }
+  }
+
+  .kind-home & {
+    grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 70rem) minmax(0.5rem, 1fr);
+
+    @include min(640) {
+      grid-template-columns: minmax(1rem, 1fr) minmax(19rem, 70rem) minmax(1rem, 1fr);
     }
   }
 
 }
 
 .footnotes {
+  font-size: 0.75em;
   a {
     background: none;
     sup {
@@ -77,7 +119,7 @@
 //   font-variant: small-caps;
 // }
 
-p.lede {
+.kind-page p.lede, .well {
   font-size: 1.25em;
   grid-column: 2 / 4;
   max-width: 55rem;
@@ -100,6 +142,12 @@ p.lede {
     height: 600px;
     background: url(../img/paint1.png);
     // opacity: 0.33;
+  }
+}
+
+.well {
+  p {
+    margin: 0;
   }
 }
 

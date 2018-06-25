@@ -14,6 +14,7 @@ comments: true
 ---
 
 Let's think about structure. With the different types of content I envision this site eventually hosting, how to I organize it all?
+<!--more-->
 
 First, what _are_ the content types?
 
@@ -37,11 +38,11 @@ First, what _are_ the content types?
 
    For things I make that are larger in scope, I think I'll just create a separate content section.
 
-#### Edit 180425
+### Edit 180425
 
 Coming back to this and thinking about the stuff section. Maybe I'll just go ahead and lose that altogether. When thinking about how I want to present content on the site, I don't really want to make a huge difference between blog posts and other things I make, because there will often be things I want to say about that thing. So yeah. Cut the `stuff/` section, and put everything in one place, organized by categories (and other taxonomies like themes and motifs). So now the question becomes, is 'blog' a good name? And no, not really. Honestly, maybe just call it 'stuff' for now? Yeah, let's go with that.
 
-#### Edit 180436
+### Edit 180436
 
 I'm back with some doubts again. Truth is, I feel like I just don't know enough about Hugo yet to make informed decisions about structuring my content. So, I've been looking around at how other people organize content in Hugo, and here's what feels good right now:
 

@@ -11,6 +11,7 @@ headerimage_credit_url: https://unsplash.com/photos/8VxoLPG9rIQ
 ---
 
 Here's what I'm into right now:
+<!--more-->
 
 - Building this site with Hugo
 - CSS Grid
