@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+
+  <div class="well">
+    List of terms under taxonomy <em>{{ .Title }}</em>
+    {{ with .Content }}
+      {{.}}
+    {{ end }}
+  </div>
+
+
+  {{ range .Paginator.Pages }}
+    <ul>
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    </ul>
+  {{ end }}
+
+  {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+    <ul class="pager main-pager">
+      {{ if .Paginator.HasPrev }}
+        <li class="first">
+          <a href="{{ .Paginator.First.URL | absURL }}">&larr; Newest</a>
+        </li>
+        <li class="previous">
+          <a href="{{ .Paginator.Prev.URL | absURL }}">&larr; Newer</a>
+        </li>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <li class="next">
+          <a href="{{ .Paginator.Next.URL | absURL }}">Older &rarr;</a>
+        </li>
+        <li class="last">
+          <a href="{{ .Paginator.Last.URL | absURL }}">Oldest &rarr;</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+{{ end }}

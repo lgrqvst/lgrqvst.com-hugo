@@ -6,9 +6,9 @@
   <body class="kind-{{ .Kind }} type-{{ .Type }} language-{{ .Lang }} {{ if .Draft }}draft{{ end }}">
     {{ partial "nav.html" . }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
-    <div class="sitemain">
+    <main class="sitemain">
       {{ block "main" . }}{{ end }}
-    </div>
+    </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 
     <script src="js/script.js"></script>

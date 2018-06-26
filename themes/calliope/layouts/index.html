@@ -1,24 +1,74 @@
 {{ define "main" }}
 
 {{ with .Content }}
-  <div class="temporary-home-page-menu">
-    {{.}}
-  </div>
+  <div class="well">{{ . }}</div>
 {{ end }}
 
-{{ $posts := .Paginate (where .Data.Pages "Type" "post") }}
-{{ range first 10 $posts.Pages }}
-  <div>
-    <h2>{{ .Title }}</h2>
-    <div>{{ .Date }}</div>
-    <div>{{ .Summary }}</div>
+<div class="temporary-home-page-menu">
+  <nav class="sitenav__actual">
+    <ul>
+      <li><a href="{{ "about/" | absURL }}">About</a></li>
+      <li><a href="{{ "now/" | absURL }}">Now</a></li>
+      <li><a href="{{ "contact/" | absURL }}">Contact</a></li>
+      <li><a href="{{ "todo/" | absURL }}">To Do</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="posts">
+
+{{ $posts := .Paginate (where .Data.Pages "Type" "post") 4 }}
+{{ range first 1 $posts.Pages }}
+  <div class="post first-post">
+    {{ $headerimage_description := .Param "headerimage_description" }}
+    {{ $headerimage_credit := .Param "headerimage_credit" }}
+    {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
+    {{ with .Param "headerimage_src" }}
+      <figure>
+        <img src="{{ . }}" alt="{{ $headerimage_description }}">
+        <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
+      </figure>
+    {{ end }}
+    <h2 class="h3"><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h2>
+    {{ with .Params.categories }}
+      <ul class="categories">
+        {{ range . }}
+          <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+    <div class="summary">{{ .Summary }}</div>
     {{ if .Truncated }}
-      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
       <div>
-        <a href="{{ .Permalink }}">Read More…</a>
+        <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
       </div>
     {{ end }}
   </div>
 {{ end }}
+
+{{ range first 3 (after 1 $posts.Pages) }}
+  <div class="post">
+    <h2 class="h3"><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h2>
+    {{ with .Params.categories }}
+      <ul class="categories">
+        {{ range . }}
+          <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+    <div class="summary">{{ .Summary }}</div>
+    {{ if .Truncated }}
+      <div>
+        <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+</div>
+
+{{ partial "pagination.html" . }}
 
 {{ end }}

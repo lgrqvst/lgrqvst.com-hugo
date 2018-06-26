@@ -6,20 +6,22 @@
   </div>
 {{ end }}
 
-  {{ range .Paginator.Pages }}
-    <div>
-      <h2>{{ .Title }}</h2>
-      <div class="summary">
-        {{ .Summary }}
-      </div>
-
-      {{ if .Truncated }}
-        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-        <div>
-          <a href="{{ .Permalink }}">Read More…</a>
-        </div>
-      {{ end }}
+{{ range .Paginator.Pages }}
+  <div class="post">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="summary">
+      {{ .Summary }}
     </div>
-  {{ end }}
+
+    {{ if .Truncated }}
+      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+      <div>
+        <a href="{{ .Permalink }}" class="readmore h5">Read More &raquo;</a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{ partial "pagination.html" . }}
 
 {{ end }}

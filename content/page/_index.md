@@ -10,4 +10,4 @@ headerimage_credit:
 headerimage_credit_url:
 ---
 
-These are all the static pages on the site.
+These are currently four static pages on the site, and these are them:
