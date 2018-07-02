@@ -197,6 +197,10 @@ main {
     grid-column: 1 / -1;
     border-bottom: 1px solid rgba(0,0,0,0.25);
     padding-bottom: 2rem;
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
