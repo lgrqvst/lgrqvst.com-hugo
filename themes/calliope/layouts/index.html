@@ -18,8 +18,8 @@
 <div class="posts">
 
 {{ $posts := .Paginate (where .Data.Pages "Type" "post") 4 }}
-{{ range first 1 $posts.Pages }}
-  <div class="post first-post">
+{{ range $i, $e := (first 4 $posts.Pages) }}
+  <div class="post post-{{ $i }}">
     {{ $headerimage_description := .Param "headerimage_description" }}
     {{ $headerimage_credit := .Param "headerimage_credit" }}
     {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
@@ -29,26 +29,6 @@
         <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
       </figure>
     {{ end }}
-    <h2 class="h3"><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h2>
-    {{ with .Params.categories }}
-      <ul class="categories">
-        {{ range . }}
-          <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
-        {{ end }}
-      </ul>
-    {{ end }}
-    <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
-    <div class="summary">{{ .Summary }}</div>
-    {{ if .Truncated }}
-      <div>
-        <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
-      </div>
-    {{ end }}
-  </div>
-{{ end }}
-
-{{ range first 3 (after 1 $posts.Pages) }}
-  <div class="post">
     <h2 class="h3"><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h2>
     {{ with .Params.categories }}
       <ul class="categories">

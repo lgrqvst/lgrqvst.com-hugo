@@ -185,12 +185,18 @@ main {
   .post {
     margin: 0 0 1.2em;
 
+    h2 {
+      margin-top: 0;
+    }
+
     figure {
       position: relative;
     }
   }
-  .first-post {
+  .post-0 {
     grid-column: 1 / -1;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    padding-bottom: 2rem;
   }
 }
 
