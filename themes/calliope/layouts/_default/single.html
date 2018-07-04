@@ -1,4 +1,6 @@
 {{ define "main" }}
   <!-- Single template -->
+  <p class="post-meta post-meta-top"><span class="inner">by <span class="author">{{ .Site.Params.AuthorFullName }}</span> on <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span></span></p>
+  <!-- <p class="author">{{ .Site.Params.AuthorFullName }}</p> -->
   {{ .Content }}
 {{ end }}

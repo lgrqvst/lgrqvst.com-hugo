@@ -247,7 +247,7 @@ body {
 
 .headerimage_credit {
   position: absolute;
-  bottom: 0.5rem; right: 0.5rem;
+  top: 0.5rem; right: 0.5rem;
   font-family: sans-serif;
   @include between(font-size, 0.625rem, 0.8125rem, 20rem, 80rem);
   font-style: italic;
@@ -262,6 +262,10 @@ body {
       background: none;
       color: white;
     }
+  }
+
+  @include min(640) {
+    top: auto; bottom: 0.5rem; right: 0.5rem;
   }
 }
 

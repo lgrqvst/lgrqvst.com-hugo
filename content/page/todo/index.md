@@ -54,8 +54,8 @@ _or_
 - [ ] Comments on posts
 - [ ] Show tags in posts
 - [ ] Show categories in posts
-- [ ] Put the author name somewhere on posts
-- [ ] Put the date somewhere on posts
+- [x] Put the author name somewhere on posts
+- [x] Put the date somewhere on posts
 - [ ] Make .lede paragraph into a shortcode to fix double <p> markup
 
 ## Git Learned

@@ -265,9 +265,39 @@ main {
 
 }
 
+.post-meta {
+  &.post-meta-top {
+    grid-column: 2 / 4;
+    max-width: 55rem;
+    font-size: 0.875em;
+
+    .inner {
+      display: inline-block;
+      padding: 0.5em;
+      background: rgba(255,255,255,0.5s);
+    }
+
+    @include min(640) {
+      text-align: right;
+      margin-top: -1.2em;
+    }
+
+    @include min(776) {
+      margin-top: -2rem;
+      .inner {
+        background: white;
+      }
+    }
+  }
+}
+
 .date {
   font-style: italic;
   // font-size: 0.875em;
+}
+
+.author {
+  font-style: italic;
 }
 
 .categories {

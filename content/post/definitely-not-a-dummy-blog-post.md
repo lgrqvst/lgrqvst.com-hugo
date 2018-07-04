@@ -1,6 +1,6 @@
 ---
 title: Definitely Not a Dummy Blog Post
-subtitle: Just Trying Different Things
+subtitle: Just Trying A Few Different Things
 date: 2018-02-10T17:13:24+09:00
 publishDate: 2018-02-10T17:13:24+09:00
 draft: true
