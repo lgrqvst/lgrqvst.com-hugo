@@ -51,8 +51,12 @@ pre {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(255,250,245,0.75) 0, rgba(255,250,245,0.75) 100%), url(../img/paper.jpg);
-  background: linear-gradient(to bottom, rgba(252,250,248,0.75) 0, rgba(252,250,248,0.75) 100%), url(../img/paper.jpg);
+  // background: linear-gradient(to bottom, rgba(255,250,245,0.75) 0, rgba(255,250,245,0.75) 100%), url(../img/paper.jpg);
+  // background: linear-gradient(to bottom, rgba(252,250,248,0.75) 0, rgba(252,250,248,0.75) 100%), url(../img/paper.jpg);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 500px),
+    linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 500px),
+    linear-gradient(to bottom, rgba(252,250,248,0.75) 0, rgba(252,250,248,0.75) 100%),
+    url(../img/paper.jpg);
   // background: rgba(253,250,247,1);
 
   display: grid;
@@ -368,4 +372,35 @@ body {
 .sitefooter {
   grid-area: f;
   background: white;
+}
+
+.colophon {
+  p {
+    margin: 0 0 1em;
+  }
+
+  .license-icons {
+    a {
+      color: rgba(102,102,102,1);
+      text-decoration: none;
+      transition: 0.25s;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  .license {
+    margin: 0;
+    text-align: justify;
+    @include between(font-size,0.5rem, 0.625rem, 20rem, 80rem);
+    color: rgba(102,102,102,1);
+    a {
+      color: rgba(34,34,34,1);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
