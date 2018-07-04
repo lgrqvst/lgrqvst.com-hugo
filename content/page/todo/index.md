@@ -15,6 +15,13 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 - [x] Make a to-do list
 
+## Content
+
+- [ ] Write something up for the About page.
+- [ ] Write something up for the Now page
+- [ ] Write something up for the Contact page
+- [ ] Put a form on the contact page
+
 ## Functionality
 
 - [ ] Put art stuff on the front page
@@ -48,3 +55,9 @@ _or_
 - [ ] Put the author name somewhere on posts
 - [ ] Put the date somewhere on posts
 - [ ] Make .lede paragraph into a shortcode to fix double <p> markup
+
+## Git Learned
+
+- [ ] Hugo and Go
+- [ ] Fuckin shortcodes, how do they work?
+- [ ] Disqus comments
