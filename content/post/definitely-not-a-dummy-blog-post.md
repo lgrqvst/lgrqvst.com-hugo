@@ -4,11 +4,15 @@ subtitle: Just Trying Different Things
 date: 2018-02-10T17:13:24+09:00
 publishDate: 2018-02-10T17:13:24+09:00
 draft: true
-language: ja
+language: en
 categories:
 - Web Development
 - Testing
 comments: true
+headerimage_src: /img/header-another-dummy-post.jpg
+headerimage_credit: Photo by Chris Fuller
+headerimage_credit_url: https://unsplash.com/photos/J2vmEGujvXQ
+headerimage_description: On a cliff, the silhouette of a man looking out over a valley. Mountains in the distance.
 ---
 <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ad, animi ipsam voluptatibus totam placeat provident hic impedit blanditiis, atque officiis nulla, vel similique, repellendus eaque. Ut, beatae. Sapiente ad labore perferendis illum rem architecto doloribus quas laborum repudiandae. Qui impedit labore, sapiente earum iste, quam. Nemo eveniet officia modi!</p>
 <!--more-->
