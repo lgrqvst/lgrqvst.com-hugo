@@ -38,6 +38,7 @@ _or_
 - [ ] Watercolor splashes should not be part of the lede, but part of the page, maybe main? Consider.
 - [ ] There should be more than one watercolor splash
 - [ ] Put smaller splashes of color on headings? Try it out.
+- [ ] Style code blocks better
 
 ## Posts
 
@@ -46,3 +47,4 @@ _or_
 - [ ] Show tags in posts
 - [ ] Put the author name somewhere on posts
 - [ ] Put the date somewhere on posts
+- [ ] Make .lede paragraph into a shortcode to fix double <p> markup
