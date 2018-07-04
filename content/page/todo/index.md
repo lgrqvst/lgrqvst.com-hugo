@@ -28,6 +28,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] Make the menu (decide what to put in it)  
 _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made?)
+- [ ] Add a section for art on the home page
 
 ## Footer
 
@@ -35,7 +36,7 @@ _or_
 - [ ] First, decide on what to put in the footer
 - [ ] Social media links
 - [ ] Blog categories?
-- [ ] License?
+- [x] License?
 - [ ] Art themes? Motifs?
 - [ ] Static page links?
 
@@ -52,6 +53,7 @@ _or_
 - [ ] Default header image for posts
 - [ ] Comments on posts
 - [ ] Show tags in posts
+- [ ] Show categories in posts
 - [ ] Put the author name somewhere on posts
 - [ ] Put the date somewhere on posts
 - [ ] Make .lede paragraph into a shortcode to fix double <p> markup
