@@ -51,3 +51,13 @@ Put "bloggy" content in `post/`.
 Put artistic/creative content in sections specific to its type, like so: `art`, `music`, `rpg`, etc.
 
 Ok, I'm locking this in. I'm decided. This is how I'm doing it. Because even if it'll all be presented as part of the same flow upfront, I still want some organization on my end. So there.
+
+### Edit 180704
+
+Ok, here's where my mind is at right now:
+
+Blog posts go in `post`.
+
+Things that are more creative/artistic in nature (and this is really not a very clear distinction, even to myself, tbh) go in `art`, under a relevant sub-section, like `drawings`, `music`, etc.
+
+I just feel like it'll be easier to present if there are just two main content types.
