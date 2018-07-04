@@ -10,7 +10,39 @@ headerimage_credit: Photo by Paul Gilmore
 headerimage_credit_url: https://unsplash.com/photos/0NetIOwaEqQ
 ---
 
-Here's what needs doing to bring this ship to port.
+Here's some of what needs doing to bring this ship to port. There's probably more that should go here. Honestly I'm just winging this whole thing.
 <!--more-->
 
-- [ ] Make a to-do list
+- [x] Make a to-do list
+
+## Functionality
+
+- [ ] Put art stuff on the front page
+- [ ] Make the menu (decide what to put in it)  
+_or_
+- [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made?)
+
+## Footer
+
+- [ ] Complete the footer
+- [ ] First, decide on what to put in the footer
+- [ ] Social media links
+- [ ] Blog categories?
+- [ ] License?
+- [ ] Art themes? Motifs?
+- [ ] Static page links?
+
+## Styling
+
+- [ ] Create watercolor splashes
+- [ ] Watercolor splashes should not be part of the lede, but part of the page, maybe main? Consider.
+- [ ] There should be more than one watercolor splash
+- [ ] Put smaller splashes of color on headings? Try it out.
+
+## Posts
+
+- [ ] Default header image for posts
+- [ ] Comments on posts
+- [ ] Show tags in posts
+- [ ] Put the author name somewhere on posts
+- [ ] Put the date somewhere on posts
