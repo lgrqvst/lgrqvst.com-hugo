@@ -57,6 +57,8 @@ _or_
 - [x] Put the author name somewhere on posts
 - [x] Put the date somewhere on posts
 - [ ] Make .lede paragraph into a shortcode to fix double <p> markup
+- [ ] Links to next and previous post
+- [ ] Related posts?
 
 ## Git Learned
 
