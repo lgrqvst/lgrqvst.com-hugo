@@ -60,7 +60,11 @@ _or_
 - [ ] Links to next and previous post
 - [ ] Related posts?
 
-## Git Learned
+## Other
+
+- [ ] Favicons
+
+## Learn About
 
 - [ ] Hugo and Go
 - [ ] Fuckin shortcodes, how do they work?
