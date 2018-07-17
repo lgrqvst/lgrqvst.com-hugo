@@ -376,35 +376,112 @@ body {
 .sitefooter {
   grid-area: f;
   background: white;
-}
 
-.colophon {
-  p {
-    margin: 0 0 1em;
+  display: grid;
+  grid-template-columns: 0.5rem minmax(19rem, 70rem) minmax(0.5rem, 1fr);
+  grid-template-rows: 1rem auto 1rem;
+  grid-template-areas:
+    ". . ."
+    ". o ."
+    ". . .";
+
+  @include min(640) {
+    grid-template-columns: 1rem minmax(18rem, 70rem) minmax(1rem, 1fr);
   }
 
-  .license-icons {
-    a {
-      color: rgba(102,102,102,1);
-      text-decoration: none;
-      transition: 0.25s;
-      &:hover {
-        color: inherit;
-      }
+  & > .inner {
+    grid-area: o;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-areas:
+      "sns"
+      "colophon";
+
+    @include min(640) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "sns sns"
+        "colophon colophon";
+    }
+
+    @include min(768) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "sns sns sns"
+        "colophon colophon colophon";
+    }
+
+    @include min(1040) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "sns sns sns sns"
+        "colophon colophon colophon colophon";
+    }
+  }
+}
+
+.sns {
+  grid-area: sns;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0 0 0.5em 0;
+  }
+
+  a {
+    display: inline-block;
+    background: $contrastColorPink;
+    color: white;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    &:hover {
+      background: white;
+      color: $contrastColorPink;
     }
   }
 
-  .license {
-    margin: 0;
-    text-align: justify;
-    @include between(font-size,0.5rem, 0.625rem, 20rem, 80rem);
+  i {
+    // margin: 0 0.5em 0 0;
+  }
+}
+
+.colophon {
+  grid-area: colophon;
+
+  p {
+    margin: 0 0 1em;
+  }
+}
+
+.license-icons {
+  a {
     color: rgba(102,102,102,1);
-    a {
-      color: rgba(34,34,34,1);
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
+    text-decoration: none;
+    transition: 0.25s;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.license {
+  margin: 0;
+  text-align: justify;
+  @include between(font-size,0.5rem, 0.625rem, 20rem, 80rem);
+  color: rgba(102,102,102,1);
+  a {
+    color: rgba(34,34,34,1);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

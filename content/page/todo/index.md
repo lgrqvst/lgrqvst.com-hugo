@@ -34,7 +34,7 @@ _or_
 
 - [ ] Complete the footer
 - [ ] First, decide on what to put in the footer
-- [ ] Social media links
+- [x] Social media links
 - [ ] Blog categories?
 - [x] License?
 - [ ] Art themes? Motifs?
@@ -64,7 +64,7 @@ _or_
 
 - [ ] Favicons
 
-## Learn About
+## Learn
 
 - [ ] Hugo and Go
 - [ ] Fuckin shortcodes, how do they work?
