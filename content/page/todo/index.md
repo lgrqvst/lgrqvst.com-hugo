@@ -47,6 +47,7 @@ _or_
 - [ ] There should be more than one watercolor splash
 - [ ] Put smaller splashes of color on headings? Try it out.
 - [ ] Style code blocks better
+- [ ] Create a fallback for browsers that don't support grid
 
 ## Posts
 
