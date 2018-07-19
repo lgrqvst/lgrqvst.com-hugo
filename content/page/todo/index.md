@@ -30,6 +30,10 @@ _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made?)
 - [ ] Add a section for art on the home page
 
+## Accessibility
+
+- [ ] Lots to do
+
 ## Footer
 
 - [ ] Complete the footer
