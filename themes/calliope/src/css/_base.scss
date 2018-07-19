@@ -442,6 +442,7 @@ body {
     color: white;
     padding: 0.25em 0.5em;
     text-decoration: none;
+    transition: 0.25s;
     &:hover {
       background: white;
       color: $contrastColorPink;
