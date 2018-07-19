@@ -24,11 +24,10 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 ## Functionality
 
-- [ ] Put art stuff on the front page
+- [ ] Add a section for art on the home page
 - [ ] Make the menu (decide what to put in it)  
 _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made?)
-- [ ] Add a section for art on the home page
 
 ## Accessibility
 
