@@ -52,6 +52,7 @@ _or_
 - [ ] Put smaller splashes of color on headings? Try it out.
 - [ ] Style code blocks better
 - [ ] Create a fallback for browsers that don't support grid
+- [ ] Change the appearance of selections
 
 ## Posts
 
