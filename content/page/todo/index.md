@@ -32,6 +32,8 @@ _or_
 ## Accessibility
 
 - [ ] Lots to do, I'm sure
+- [ ] ARIA
+- [ ] Contrast between text and background for readability
 - [ ] Make sure reader mode works
 
 ## Footer
