@@ -31,7 +31,8 @@ _or_
 
 ## Accessibility
 
-- [ ] Lots to do
+- [ ] Lots to do, I'm sure
+- [ ] Make sure reader mode works
 
 ## Footer
 
