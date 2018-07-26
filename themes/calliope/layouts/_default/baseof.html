@@ -4,6 +4,10 @@
     {{ partial "head.html" . }}
   </head>
   <body class="kind-{{ .Kind }} type-{{ .Type }} language-{{ .Lang }} {{ if .Draft }}draft{{ end }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDX64RQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     {{ partial "nav.html" . }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main class="sitemain">
