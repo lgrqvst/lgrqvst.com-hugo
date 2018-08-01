@@ -19,6 +19,7 @@ Here's what I'm into right now:
 - DIY
 - Croquis
 - Leftism
-- Bullet Journal-ing
+- Bullet Journal-ing for productivity
+- Learning React
 
 Currently reading: The Shock Doctrine by Naomi Klein
