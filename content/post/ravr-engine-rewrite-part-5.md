@@ -2,7 +2,7 @@
 title: RAVr - Engine Rewrite, Part 5
 subtitle:
 date: 2017-10-20T11:38:46+09:00
-publishDate: 2017-10-2011:38:46+09:00
+publishDate: 2017-10-20T11:38:46+09:00
 draft: false
 categories:
 - Game Development
