@@ -15,11 +15,11 @@ Here's what I'm into right now:
 
 - Building this site with Hugo
 - CSS Grid
-- Pillars of Eternity
 - DIY
 - Croquis
 - Leftism
 - Bullet Journal-ing for productivity
 - Learning React
+- The Wire
 
-Currently reading: The Shock Doctrine by Naomi Klein
+Currently reading: Provenance by Ann Leckie
