@@ -22,4 +22,4 @@ Here's what I'm into right now:
 - Learning React
 - The Wire
 
-Currently reading: Provenance by Ann Leckie
+Currently reading: _The Conquest of Bread_ by Peter Kropotkin
