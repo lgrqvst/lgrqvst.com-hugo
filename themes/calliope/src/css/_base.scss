@@ -398,32 +398,40 @@ body {
     grid-row-gap: 1rem;
     grid-template-areas:
       "sns"
+      "toc"
+      "cats"
+      "tags"
       "colophon";
 
     @include min(640) {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "sns sns"
+        "sns toc"
+        "cats tags"
         "colophon colophon";
     }
 
     @include min(768) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        "sns sns sns"
-        "colophon colophon colophon";
+        "sns toc cats"
+        "tags tags colophon";
     }
 
     @include min(1040) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas:
-        "sns sns sns sns"
+        "sns toc cats tags"
         "colophon colophon colophon colophon";
     }
   }
+
+  h3 {
+    margin: 0 0 0.5em 0;
+  }
 }
 
-.sns {
+.footer-sns {
   grid-area: sns;
 
   ul {
@@ -451,6 +459,120 @@ body {
 
   i {
     // margin: 0 0.5em 0 0;
+  }
+}
+
+.footer-toc {
+  grid-area: toc;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: $contrastColorPink;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($contrastColorPink, 20);
+    }
+  }
+}
+
+.footer-categories {
+  grid-area: cats;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+  }
+
+  li {
+    // margin: 0 1rem 1rem 0;
+  }
+
+  a {
+    color: $contrastColorPink;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($contrastColorPink, 20);
+    }
+  }
+}
+
+.footer-tags {
+  grid-area: tags;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin: 0 1em 0.75em 0;
+  }
+
+}
+
+.tag {
+  position: relative;
+  display: block;
+  font-size: 0.625em;
+  background: lighten($contrastColorPink, 30);
+  color: darken($contrastColorPink, 30);
+  text-decoration: none;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  border-radius: 0.2em;
+  transition: 0.25s;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 0.1em);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0; height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid lighten($contrastColorPink, 30);
+    border-radius: 0.2em;
+    transition: 0.25s;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% + 0.05em);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.4em; height: 0.4em;
+    border-radius: 50%;
+    background: white;
+  }
+
+  &:hover {
+    background: lighten($contrastColorPink, 40);
+
+    &:before {
+      border-left: 1em solid lighten($contrastColorPink, 40);
+    }
   }
 }
 

@@ -38,13 +38,15 @@ _or_
 
 ## Footer
 
-- [ ] Complete the footer
-- [ ] First, decide on what to put in the footer
+Eventually, maybe I'll add themes and motifs here as well, but seeing how there's no art content currently on the page it seems unnecessary. Maybe add those only on the `/art` page?
+
+- [x] Complete the footer
+- [x] First, decide on what to put in the footer
 - [x] Social media links
-- [ ] Blog categories?
+- [x] Blog categories?
 - [x] License?
-- [ ] Art themes? Motifs?
-- [ ] Static page links?
+- [x] Static page links?
+- [x] Tags
 
 ## Styling
 

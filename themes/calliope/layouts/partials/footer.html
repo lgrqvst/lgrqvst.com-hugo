@@ -1,6 +1,7 @@
 <footer class="sitefooter">
   <div class="inner">
-    <div class="sns">
+    <div class="footer-sns">
+      <h3 class="h4">SNS</h3>
       <ul>
         <li><a href="https://twitter.com/lgrqvst"><i class="fab fa-twitter"></i> Twitter</a></li>
         <li><a href="https://www.instagram.com/lgrqvst/"><i class="fab fa-instagram"></i> Instagram</a></li>
@@ -10,16 +11,37 @@
       </ul>
     </div>
 
-    <div class="toc">
-      <h3>Pages</h3>
+    <div class="footer-toc">
+      <h3 class="h4">Content</h3>
       <nav class="sitenav-footer">
         <ul>
+          <li><a href="{{ "/" | absURL }}">Home</a></li>
           <li><a href="{{ "about/" | absURL }}">About</a></li>
           <li><a href="{{ "now/" | absURL }}">Now</a></li>
           <li><a href="{{ "contact/" | absURL }}">Contact</a></li>
           <li><a href="{{ "todo/" | absURL }}">To Do</a></li>
+          <li><a href="{{ "post/" | absURL }}">Posts</a></li>
+          <li><a href="javascript:;">Art</a></li>
         </ul>
       </nav>
+    </div>
+
+    <div class="footer-categories">
+      <h3 class="h4">Categories</h3>
+      <ul>
+        {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+           <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}}
+      </ul>
+    </div>
+
+    <div class="footer-tags">
+      <h3 class="h4">Tags</h3>
+      <ul>
+        {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+           <li><a href="{{.Permalink}}" class="tag">{{.Title}}</a></li>
+        {{end}}
+      </ul>
     </div>
 
     <div class="colophon">
