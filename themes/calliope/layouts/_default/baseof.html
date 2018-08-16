@@ -15,6 +15,6 @@
     </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 
-    <script src="js/script.js"></script>
+    <script src="{{ "js/script.js" | absURL }}"></script>
   </body>
 </html>
