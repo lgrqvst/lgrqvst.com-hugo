@@ -1,0 +1,39 @@
+.contact-form {
+
+}
+
+.contact-form-input {
+  margin: 0 0 1em;
+}
+
+.contact-form-input__label {
+  display: block;
+}
+
+.contact-form-input__input--text, .contact-form-input__input--email, .contact-form-input__input--textarea {
+  width: 100%;
+  display: block;
+  padding: 0.5em;
+  background: white;
+  border: 0;
+  border-radius: 0.25em;
+}
+
+.contact-form-input__input--textarea {
+  height: 8em;
+}
+
+.contact-form-input__input--submit {
+  background: $contrastColorPink;
+  color: white;
+  border: 0;
+  border-radius: 0.25em;
+  font-size: 1.25em;
+  padding: 0.25em 1em;
+  transition: 0.25s;
+
+  &:hover {
+    background: white;
+    color: $contrastColorPink;
+  }
+}

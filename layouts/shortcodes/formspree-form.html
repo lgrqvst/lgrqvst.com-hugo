@@ -1,0 +1,26 @@
+<div class="contact-form">
+  <form action="https://formspree.io/lgrqvst@gmail.com" method="post">
+      <div class="contact-form-input contact-form-input--text">
+        <label for="contact-form-name" class="contact-form-input__label">Name</label>
+        <input type="text" name="name" class="contact-form-input__input contact-form-input__input--text" id="contact-form-name" placeholder="Name" required>
+      </div>
+      <div class="contact-form-input contact-form-input--text">
+        <label for="contact-form-pronouns" class="contact-form-input__label">Pronouns</label>
+        <input type="text" name="pronouns" class="contact-form-input__input contact-form-input__input--text" id="contact-form-pronouns" placeholder="they/them">
+      </div>
+      <div class="contact-form-input contact-form-input--email">
+        <label for="contact-form-email" class="contact-form-input__label">Email</label>
+        <input type="email" name="_replyto" class="contact-form-input__input contact-form-input__input--email" id="contact-form-email" placeholder="name@example.com" required>
+      </div>
+      <div class="contact-form-input contact-form-input--textarea">
+        <label for="contact-form-message" class="contact-form-input__label">Message</label>
+        <textarea name="message" class="contact-form-input__input contact-form-input__input--textarea" id="contact-form-message" required></textarea>
+      </div>
+      <div class="contact-form-input contact-form-input--submit">
+        <input type="text" name="_gotcha" style="display: none;">
+        <input type="hidden" name="_subject" value="LGRQVST form submission!">
+        <input type="hidden" name="_next" value="{{ "/thanks" | absURL }}">
+        <input type="submit" value="Send" class="contact-form-input__input contact-form-input__input--submit">
+      </div>
+  </form>
+</div>
