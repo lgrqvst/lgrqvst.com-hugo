@@ -13,9 +13,8 @@ comments: true
 ---
 
 Yep. Starting a dev blog for this project. Nothing fancy. Just a few markdown files in this folder documenting the process. I'm gonna start out easy and aim for 1-2 posts a month for now, but I won't have a fixed schedule. Whenever I feel like there's something of interest to write about, that's what I'll do.
-<!--more-->
 
-This will also be a place to go over and discuss ideas I have for the direction of the project, and I think writing about that stuff will give me a clearer picture of what I want to do.
+<!--more-->This will also be a place to go over and discuss ideas I have for the direction of the project, and I think writing about that stuff will give me a clearer picture of what I want to do.
 
 I also won't rule out going back over old code and writing about what my intentions were at the time and how it comes together.
 

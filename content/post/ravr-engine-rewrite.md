@@ -14,9 +14,8 @@ comments: true
 ---
 
 When I say engine, I'm not talking about the game engine. Frankly, I'm not even sure what would constitute the game engine in a game this small - the update and draw functions? No, I'm talking about the internal workings of the imagined engine of the ship.
-<!--more-->
 
-I think that as it is right now, there's no in-universe logic to how the engine works on a mechanical level. It's all just variables stating that when this button is pressed, the rate of fuel consumption should be this, and when this button is pressed the engine output should change by this much. It's a mess. It's a mess to add new bits to it and it's a mess to make adjustments to the controls, and it's a mess to keep the whole thing in your head.
+<!--more-->I think that as it is right now, there's no in-universe logic to how the engine works on a mechanical level. It's all just variables stating that when this button is pressed, the rate of fuel consumption should be this, and when this button is pressed the engine output should change by this much. It's a mess. It's a mess to add new bits to it and it's a mess to make adjustments to the controls, and it's a mess to keep the whole thing in your head.
 
 So I'm rewriting it.
 

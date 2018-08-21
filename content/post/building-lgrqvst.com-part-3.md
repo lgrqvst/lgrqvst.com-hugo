@@ -14,9 +14,8 @@ comments: true
 ---
 
 Let's think about structure. With the different types of content I envision this site eventually hosting, how to I organize it all?
-<!--more-->
 
-First, what _are_ the content types?
+<!--more-->First, what _are_ the content types?
 
 - Static pages
 

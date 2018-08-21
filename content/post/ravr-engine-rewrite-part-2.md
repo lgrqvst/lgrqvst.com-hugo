@@ -17,9 +17,8 @@ comments: true
 (Continuing from 2017-09-30)
 
 For the past few days, my head has been filled with ideas of fuel injection and combustion chambers and what-have-you, but it occurred to me that since I don't know anything about real engines, it might be better to simply not bother with any real-world practical considerations, and simply go for a more, let's say, _creative_ approach to the problem.
-<!--more-->
 
-Here's my first idea.
+<!--more-->Here's my first idea.
 
 ```
       Fuel ---> Engine <--- Oxidizer

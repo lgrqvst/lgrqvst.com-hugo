@@ -14,9 +14,10 @@ headerimage_credit: Photo by Chris Fuller
 headerimage_credit_url: https://unsplash.com/photos/J2vmEGujvXQ
 headerimage_description: On a cliff, the silhouette of a man looking out over a valley. Mountains in the distance.
 ---
-<p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ad, animi ipsam voluptatibus totam placeat provident hic impedit blanditiis, atque officiis nulla, vel similique, repellendus eaque. Ut, beatae. Sapiente ad labore perferendis illum rem architecto doloribus quas laborum repudiandae. Qui impedit labore, sapiente earum iste, quam. Nemo eveniet officia modi!</p>
-<!--more-->
 
+{{% lede %}}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ad, animi ipsam voluptatibus totam placeat provident hic impedit blanditiis, atque officiis nulla, vel similique, repellendus eaque. Ut, beatae. Sapiente ad labore perferendis illum rem architecto doloribus quas laborum repudiandae. Qui impedit labore, sapiente earum iste, quam. Nemo eveniet officia modi!{{% /lede %}}
+
+<!--more-->
 Lorem ipsum dolor sit amet, _consectetur_ adipisicing elit. Ratione [dolorum adipisci](https://lgrqvst.com "Lorem ipsum dolor sit amet") modi assumenda in sint magnam accusantium voluptate aliquam mollitia sunt dolorem architecto veritatis earum culpa et officiis ea molestiae nulla commodi atque quos, necessitatibus optio tempore! ~~Perferendis aspernatur, esse.~~[^1] Molestiae natus _temporibus ducimus_ veritatis praesentium dolor necessitatibus unde voluptates!
 
 <figure class="align-narrow">
