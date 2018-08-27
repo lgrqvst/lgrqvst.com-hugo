@@ -61,13 +61,14 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 ## Posts
 
 - [ ] Default header image for posts
-- [ ] Comments on posts
-- [ ] Show tags in posts
-- [ ] Show categories in posts
+- [ ] Consider adding header images to the existing posts (all or some)
+- [x] Comments on posts
+- [ ] Show tags on post single view
+- [ ] Show categories on post single view
 - [x] Put the author name somewhere on posts
 - [x] Put the date somewhere on posts
 - [x] Make .lede paragraph into a shortcode to fix double `<p>` markup (Mostly solved I think)
-- [ ] Links to next and previous post
+- [ ] Links to next and previous post in category (categories?)
 - [ ] Related posts?
 
 ## Other
@@ -79,4 +80,4 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 
 - [ ] Hugo and Go
 - [x] Fuckin shortcodes, how do they work?
-- [ ] Disqus comments
+- [x] Disqus comments
