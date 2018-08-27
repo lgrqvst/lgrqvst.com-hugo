@@ -17,10 +17,10 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 ## Content
 
-- [ ] Write something up for the About page.
-- [ ] Write something up for the Now page
-- [ ] Write something up for the Contact page
-- [ ] Put a form on the contact page
+- [x] ~~Write something up for the About page~~ (Honestly, this is fine for now)
+- [x] ~~Write something up for the Now page~~ (Honestly, this is fine for now)
+- [x] ~~Write something up for the Contact page~~ (Honestly, this is fine for now)
+- [x] Put a form on the contact page
 
 ## Functionality
 
@@ -35,6 +35,7 @@ _or_
 - [ ] ARIA
 - [ ] Contrast between text and background for readability
 - [ ] Make sure reader mode works
+- [ ] Create a fallback for browsers that don't support grid
 
 ## Footer
 
@@ -55,7 +56,6 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 - [ ] There should be more than one watercolor splash
 - [ ] Put smaller splashes of color on headings? Try it out.
 - [ ] Style code blocks better
-- [ ] Create a fallback for browsers that don't support grid
 - [ ] Change the appearance of selections
 
 ## Posts
@@ -66,7 +66,7 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 - [ ] Show categories in posts
 - [x] Put the author name somewhere on posts
 - [x] Put the date somewhere on posts
-- [ ] Make .lede paragraph into a shortcode to fix double `<p>` markup
+- [x] Make .lede paragraph into a shortcode to fix double `<p>` markup (Mostly solved I think)
 - [ ] Links to next and previous post
 - [ ] Related posts?
 
@@ -78,5 +78,5 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 ## Learn
 
 - [ ] Hugo and Go
-- [ ] Fuckin shortcodes, how do they work?
+- [x] Fuckin shortcodes, how do they work?
 - [ ] Disqus comments
