@@ -4,3 +4,11 @@
   <!-- <p class="author">{{ .Site.Params.AuthorFullName }}</p> -->
   {{ .Content }}
 {{ end }}
+
+{{ define "comments" }}
+  <div class="comments">
+    <div class="inner">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </div>
+{{ end }}

@@ -1,17 +1,4 @@
 main {
-  grid-area: m;
-
-  @include between(font-size, 0.875rem, 1rem, 20rem, 80rem);
-
-  display: grid;
-  grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 45rem) auto minmax(0.5rem, 1fr);
-  align-content: start;
-
-  @include min(640) {
-    grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
-    // grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 70em) minmax(1rem, 1fr);
-  }
-
   p, ul, ol, figure, h1, h2, h3, h4, h5, h6, blockquote, table, dl, pre, hr, & > div {
     grid-column: 2 / 3;
   }

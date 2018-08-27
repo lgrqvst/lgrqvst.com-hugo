@@ -16,6 +16,4 @@ I'm originally from Gothenburg, Sweden, but I've lived in Japan since 2016.
 
 My pronouns are he/him.
 
-This section might be expanded upon in the future, but for now, if curiosity is burning like a raging fire inside you, [contact me]({{< ref "/contact" >}}).
-
-<!--more-->
+This section might be expanded upon in the future, but for now, if curiosity is burning like a raging fire inside you, [contact me]({{< ref "/contact" >}}).<!--more-->

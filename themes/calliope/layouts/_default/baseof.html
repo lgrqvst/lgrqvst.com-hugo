@@ -13,6 +13,7 @@
     <main class="sitemain">
       {{ block "main" . }}{{ end }}
     </main>
+    {{ block "comments" . }}{{ end }}
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 
     <script src="{{ "js/script.js" | absURL }}"></script>

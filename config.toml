@@ -8,6 +8,7 @@ metaDataFormat = "yaml"
 paginate = 10
 paginatePath = "page"
 preserveTaxonomyNames = true
+disqusShortname = "lgrqvst"
 
 [params]
   authorFirstName = "Johan"

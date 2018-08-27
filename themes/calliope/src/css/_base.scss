@@ -62,7 +62,7 @@ body {
   display: grid;
 
   grid-template-columns: 8rem 1fr;
-  grid-template-rows: 3rem 2rem 8rem auto 2rem 1fr 2rem auto;
+  grid-template-rows: 3rem 2rem 8rem auto 2rem 1fr 2rem auto 2rem auto;
   grid-template-areas:
   "n n"
   ". ."
@@ -71,11 +71,13 @@ body {
   ". ."
   "m m"
   ". ."
+  "c c"
+  ". ."
   "f f";
 
   @include min(640) {
     grid-template-columns: 1fr 7rem minmax(11rem, 56rem) 1rem 2rem 4rem minmax(2rem, 1fr);
-    grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
+    grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem auto 2rem;
     grid-template-areas:
     ". . . . . n ."
     "h h . . . n ."
@@ -84,8 +86,37 @@ body {
     ". . . . . . ."
     "m m m m m m m"
     ". . . . . . ."
+    "c c c c c c c"
+    ". . . . . . ."
     ". f f f f f f"
     ". . . . . . .";
+  }
+
+  &.type-page, &.kind-section {
+    grid-template-rows: 3rem 2rem 8rem auto 2rem 1fr 2rem auto;
+    grid-template-areas:
+    "n n"
+    ". ."
+    "h ."
+    ". ."
+    ". ."
+    "m m"
+    ". ."
+    "f f";
+
+    @include min(640) {
+      grid-template-rows: 2rem 3.5rem 4.5rem minmax(0px, auto) 2rem 1fr 2rem auto 2rem;
+      grid-template-areas:
+      ". . . . . n ."
+      "h h . . . n ."
+      "h h . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      "m m m m m m m"
+      ". . . . . . ."
+      ". f f f f f f"
+      ". . . . . . .";
+    }
   }
 
   &.kind-home {
@@ -370,6 +401,40 @@ body {
       transition: 0.25s;
       text-shadow: 0.25rem -0.15rem 0 rgba(100,255,100,1), 0.3rem 0.2rem 0 rgba(255,100,100,1), -0.25rem -0.05rem 0 rgba(100,100,255,1);
     }
+  }
+}
+
+main {
+  grid-area: m;
+
+  @include between(font-size, 0.875rem, 1rem, 20rem, 80rem);
+
+  display: grid;
+  grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 45rem) auto minmax(0.5rem, 1fr);
+  align-content: start;
+
+  @include min(640) {
+    grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
+    // grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 70em) minmax(1rem, 1fr);
+  }
+}
+
+.comments {
+  grid-area: c;
+
+  display: grid;
+  grid-template-columns: minmax(0.5rem, 1fr) minmax(19rem, 45rem) auto minmax(0.5rem, 1fr);
+  align-content: start;
+
+
+  @include min(640) {
+    grid-template-columns: minmax(0.5rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
+  }
+
+  & > .inner {
+    border-top: 1rem solid rgba(255,255,255,1);
+    padding-top: 2rem;
+    grid-column: 2 / 3;
   }
 }
 

@@ -17,9 +17,9 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 ## Content
 
-- [x] ~~Write something up for the About page~~ (Honestly, this is fine for now)
-- [x] ~~Write something up for the Now page~~ (Honestly, this is fine for now)
-- [x] ~~Write something up for the Contact page~~ (Honestly, this is fine for now)
+- [x] ~~Write something up for the About page~~
+- [x] ~~Write something up for the Now page~~
+- [x] ~~Write something up for the Contact page~~ (Honestly, these are fine for now)
 - [x] Put a form on the contact page
 
 ## Functionality
