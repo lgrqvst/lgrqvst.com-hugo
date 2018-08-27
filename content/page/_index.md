@@ -10,4 +10,4 @@ headerimage_credit:
 headerimage_credit_url:
 ---
 
-These are four static pages on the site, and these are them:
+These are four static pages of note on the site, and these are them:
