@@ -22,4 +22,4 @@ Here's what I'm into right now:
 - Learning React
 - The Wire
 
-Currently reading: _The Conquest of Bread_ by Peter Kropotkin
+Currently reading: _The Buddha in the Attic_ by Julie Otsuka
