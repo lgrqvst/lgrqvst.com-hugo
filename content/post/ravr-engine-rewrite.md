@@ -34,4 +34,4 @@ I want something that has more of an in-universe feel to it. Something that feel
 
 ---
 
-[^1]: Disclaimer: I know nothing about real engines (hence the quotes), so whatever solution I come up with in the end will only be similar to a real engine in superficial details (as misunderstood by me)._
+[^1]: Disclaimer: I know nothing about real engines, so whatever solution I come up with in the end will only be similar to a real engine in superficial details (as misunderstood by me)._
