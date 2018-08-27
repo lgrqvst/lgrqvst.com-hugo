@@ -73,6 +73,7 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 ## Other
 
 - [ ] Favicons
+- [ ] 404 page
 
 ## Learn
 
