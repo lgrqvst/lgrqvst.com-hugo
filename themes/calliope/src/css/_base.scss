@@ -428,7 +428,7 @@ main {
 
 
   @include min(640) {
-    grid-template-columns: minmax(0.5rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) minmax(25rem, 45rem) minmax(0rem, 25rem) minmax(1rem, 1fr);
   }
 
   & > .inner {
