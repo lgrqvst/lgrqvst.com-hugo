@@ -21,4 +21,4 @@ This is what I'm into right now:
 - Bullet Journal-ing for productivity
 - Learning React
 
-Currently reading: _The Buddha in the Attic_ by Julie Otsuka
+Currently reading: _Hamlet on the Holodeck: The Future of Narrative in Cyberspace_ by Janet H. Murray
