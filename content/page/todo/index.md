@@ -62,6 +62,7 @@ _or_
 - [ ] Default header image for posts
 - [ ] Consider adding header images to the existing posts (all or some)
 - [x] Comments on posts
+- [ ] Add a _Show comments_ button and stop Disqus section from loading until user presses the button 
 - [ ] Show tags on post single view
 - [ ] Show categories on post single view
 - [x] Put the author name somewhere on posts
