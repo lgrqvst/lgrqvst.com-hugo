@@ -5,7 +5,7 @@ draft: false
 tags: []
 comments: false
 hideinlisting: true
-headerimage_src: /img/header-comment-policy.jpg
+headerimage_src: /img/page/header-comment-policy.jpg
 headerimage_description:
 headerimage_credit: Photo by Anthony DELANOIX
 headerimage_credit_url: https://unsplash.com/photos/hzgs56Ze49s

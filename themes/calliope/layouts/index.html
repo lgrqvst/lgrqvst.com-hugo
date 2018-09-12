@@ -17,38 +17,83 @@
 
 <div class="posts">
 
-{{ $posts := .Paginate (where .Data.Pages "Type" "post") 4 }}
-{{ range $i, $e := (first 4 $posts.Pages) }}
-  <div class="post post-{{ $i }}">
-    {{ $headerimage_description := .Param "headerimage_description" }}
-    {{ $headerimage_credit := .Param "headerimage_credit" }}
-    {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
-    {{ with .Param "headerimage_src" }}
-      <figure>
-        <img src="{{ . }}" alt="{{ $headerimage_description }}">
-        <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
-      </figure>
-    {{ end }}
-    <h2 class="h3"><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h2>
-    {{ with .Params.categories }}
-      <ul class="categories">
-        {{ range . }}
-          <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
-        {{ end }}
-      </ul>
-    {{ end }}
-    <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
-    <div class="summary">{{ .Summary }}</div>
-    {{ if .Truncated }}
-      <div>
-        <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
-      </div>
-    {{ end }}
-  </div>
-{{ end }}
+  <h2>Blog</h2>
+
+  {{ range $index, $page := (first 4 (where .Pages "Section" "post")) }}
+
+    <div class="post post-{{ $index }}">
+      {{ $headerimage_description := .Param "headerimage_description" }}
+      {{ $headerimage_credit := .Param "headerimage_credit" }}
+      {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
+      {{ with .Param "headerimage_src" }}
+        <figure>
+          <img src="{{ . }}" alt="{{ $headerimage_description }}">
+          <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
+        </figure>
+      {{ end }}
+      <h3><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h3>
+      {{ with .Params.categories }}
+        <ul class="categories">
+          {{ range . }}
+            <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+      <div class="summary">{{ .Summary }}</div>
+      {{ if .Truncated }}
+        <div>
+          <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
 
 </div>
 
-{{ partial "pagination.html" . }}
+<div class="allposts h3">
+  <div class="inner">
+    <a href="{{ "post/" | absURL }}">All posts &raquo;</a>
+  </div>
+</div>
+
+<div class="arts">
+  <h2>Art</h2>
+
+  {{ range $index, $page := (first 4 (where .Pages "Section" "art")) }}
+    <div class="post post-{{ $index }}">
+      {{ $headerimage_description := .Param "headerimage_description" }}
+      {{ $headerimage_credit := .Param "headerimage_credit" }}
+      {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
+      {{ with .Param "headerimage_src" }}
+        <figure>
+          <img src="{{ . }}" alt="{{ $headerimage_description }}">
+          <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
+        </figure>
+      {{ end }}
+      <h3><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h3>
+      {{ with .Params.categories }}
+        <ul class="categories">
+          {{ range . }}
+            <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+      <div class="summary">{{ .Summary }}</div>
+      {{ if .Truncated }}
+        <div>
+          <a href="{{ .Permalink }}" class="readmore h5">Read more &raquo;</a>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+<div class="allposts h3">
+  <div class="inner">
+    <a href="{{ "art/" | absURL }}">All art &raquo;</a>
+  </div>
+</div>
 
 {{ end }}

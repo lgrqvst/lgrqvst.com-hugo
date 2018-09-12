@@ -4,7 +4,7 @@ date: 2018-06-22T18:16:00+09:00
 draft: false
 tags: []
 comments: false
-headerimage_src: /img/header-todo.jpg
+headerimage_src: /img/page/header-todo.jpg
 headerimage_description:
 headerimage_credit: Photo by Paul Gilmore
 headerimage_credit_url: https://unsplash.com/photos/0NetIOwaEqQ
@@ -24,7 +24,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 ## Functionality
 
-- [ ] Add a section for art on the home page
+- [x] Add a section for art on the home page
 - [ ] Make the menu (decide what to put in it)  
 _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made? Maybe make it into a search function? Is there an easy way to do that with Hugo?)
@@ -39,8 +39,6 @@ _or_
 
 ## Footer
 
-Eventually, maybe I'll add themes and motifs here as well, but seeing how there's no art content currently on the page it seems unnecessary. Maybe add those only on the `/art` page?
-
 - [x] Complete the footer
 - [x] First, decide on what to put in the footer
 - [x] Social media links
@@ -48,10 +46,11 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 - [x] License?
 - [x] Static page links?
 - [x] Tags
+- [ ] Some kind of `art` categories/types/themes/motifs/whatever links. Maybe not in the footer, but on the `art` list page? Maybe both?
 
 ## Styling
 
-- [ ] Create watercolor splashes
+- [ ] Create more and original watercolor splashes
 - [ ] Watercolor splashes should not be part of the lede, but part of the page, maybe main? Consider.
 - [ ] There should be more than one watercolor splash
 - [ ] Put smaller splashes of color on headings? Try it out.
@@ -70,14 +69,17 @@ Eventually, maybe I'll add themes and motifs here as well, but seeing how there'
 - [x] Make .lede paragraph into a shortcode to fix double `<p>` markup (Mostly solved I think)
 - [ ] Links to next and previous post in category (categories?)
 - [ ] Related posts?
+- [x] On lists, add header images where available
+- [ ] On e.g. category listings, distinguish between `posts` and `art`
 
 ## Other
 
 - [ ] Favicons
 - [ ] 404 page
+- [ ] RSS feed (Do people still use these?)
 
 ## Learn
 
-- [ ] Hugo and Go
+- [x] ~~Hugo and Go~~ For now, just googling problems when they come up seems to work fine.
 - [x] Fuckin shortcodes, how do they work?
 - [x] Disqus comments

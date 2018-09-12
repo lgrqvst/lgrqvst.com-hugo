@@ -9,7 +9,7 @@ categories:
 - Web Development
 - Testing
 comments: true
-headerimage_src: /img/header-another-dummy-post.jpg
+headerimage_src: /img/post/header-another-dummy-post.jpg
 headerimage_credit: Photo by Chris Fuller
 headerimage_credit_url: https://unsplash.com/photos/J2vmEGujvXQ
 headerimage_description: On a cliff, the silhouette of a man looking out over a valley. Mountains in the distance.
