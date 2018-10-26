@@ -21,4 +21,4 @@ This is what I'm into right now:
 - Bullet Journal-ing for productivity
 - Learning React
 
-Currently reading: _The Themis Files_ by Sylvain Neuvel
+Currently reading: _A Brief History of Neoliberalism_ by David Harvey
