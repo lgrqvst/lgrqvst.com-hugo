@@ -18,7 +18,7 @@ This is what I'm into right now:
 - Trying to build a habit of daily sketching
 - Leftism
 - Anarchism
-- Bullet Journal-ing for productivity
 - Learning React
+- RPGs
 
-Currently reading: _A Brief History of Neoliberalism_ by David Harvey
+Currently reading: _Sense and Sensibility_ by Jane Austen
