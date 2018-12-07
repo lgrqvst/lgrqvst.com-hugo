@@ -11,6 +11,7 @@ headerimage_credit_url: https://unsplash.com/photos/0NetIOwaEqQ
 ---
 
 Here's some of what needs doing to bring this ship to port. There's probably more that should go here. Honestly I'm just winging this whole thing.
+
 <!--more-->
 
 - [x] Make a to-do list
@@ -26,8 +27,9 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 - [x] Add a section for art on the home page
 - [ ] Make the menu (decide what to put in it)  
-_or_
+       _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made? Maybe make it into a search function? Is there an easy way to do that with Hugo?)
+- [ ] Some sort of home page navigation to quickly jump to the Art section, and back up? A lot of scrolling on mobile :/
 
 ## Accessibility
 
@@ -46,23 +48,25 @@ _or_
 - [x] License?
 - [x] Static page links?
 - [x] Tags
-- [ ] Some kind of `art` categories/types/themes/motifs/whatever links. Maybe not in the footer, but on the `art` list page? Maybe both?
+- [ ] `art` types. At present: Short Stories, Illustrations.
 
 ## Styling
 
 - [ ] Create more and original watercolor splashes
-- [ ] Watercolor splashes should not be part of the lede, but part of the page, maybe main? Consider.
+- [ ] Watercolor splashes should not be part of `.lede`, but part of the page
 - [ ] There should be more than one watercolor splash
-- [ ] Put smaller splashes of color on headings? Try it out.
+- [ ] Make the lede shortcode accept a class to control watercolor, or if I change them to be part of the page, have the page accept a param to determine which one to use
+- [ ] Put smaller splashes of color on headings? Try it out
 - [ ] Style code blocks better
 - [ ] Change the appearance of selections
+- [ ] Maybe restyle `.lede`?
 
 ## Posts
 
 - [ ] Default header image for posts
 - [ ] Consider adding header images to the existing posts (all or some)
 - [x] Comments on posts
-- [ ] Add a _Show comments_ button and stop Disqus section from loading until user presses the button 
+- [ ] Add a _Show comments_ button and stop Disqus section from loading until user presses the button
 - [ ] Show tags on post single view
 - [ ] Show categories on post single view
 - [x] Put the author name somewhere on posts
@@ -72,15 +76,17 @@ _or_
 - [ ] Related posts?
 - [x] On lists, add header images where available
 - [ ] On e.g. category listings, distinguish between `posts` and `art`
+- [ ] On art pages, display themes, motifs, &c.
 
 ## Other
 
 - [ ] Favicons
 - [ ] 404 page
 - [ ] RSS feed (Do people still use these?)
+- [ ] Figure out image hosting situation.
 
 ## Learn
 
-- [x] ~~Hugo and Go~~ For now, just googling problems when they come up seems to work fine.
+- [x] ~~Hugo and Go~~ For now, just googling problems when they come up seems to work fine
 - [x] Fuckin shortcodes, how do they work?
 - [x] Disqus comments
