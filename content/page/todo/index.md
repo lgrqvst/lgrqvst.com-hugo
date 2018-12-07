@@ -30,6 +30,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
        _or_
 - [ ] Remove the menu (do I even need a menu? Maybe just go with the temporary one I made? Maybe make it into a search function? Is there an easy way to do that with Hugo?)
 - [ ] Some sort of home page navigation to quickly jump to the Art section, and back up? A lot of scrolling on mobile :/
+- [ ] Show art type on the post on the home page and category listing
 
 ## Accessibility
 
@@ -48,7 +49,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [x] License?
 - [x] Static page links?
 - [x] Tags
-- [ ] `art` types. At present: Short Stories, Illustrations.
+- [ ] Art types. At present: Short Stories, Illustrations.
 
 ## Styling
 
