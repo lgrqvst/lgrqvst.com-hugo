@@ -11,14 +11,16 @@ headerimage_credit_url: https://unsplash.com/photos/8VxoLPG9rIQ
 ---
 
 This is what I'm into right now:
+
 <!--more-->
 
-- Ever so slowly working on improving this site
-- DIY
-- Trying to build a habit of daily sketching
+- Learning React
+- Making the best of 2019
+- Getting back into photography
 - Leftism
 - Anarchism
-- Learning React
+- DIY
+- Trying to build a habit of daily sketching
 - RPGs
 
-Currently reading: _Sense and Sensibility_ by Jane Austen
+Currently reading: _Ninefox Gambit_ by Yoon Ha Lee
