@@ -3,7 +3,7 @@ title: Ravr... Again
 subtitle:
 date: 2019-01-10T15:30:00+09:00
 publishDate: 2019-01-10T15:30:00+09:00
-draft: true
+draft: false
 categories:
   - Game Development
   - RAVr
