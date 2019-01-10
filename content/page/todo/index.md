@@ -56,7 +56,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] Create more and original watercolor splashes
 - [ ] Watercolor splashes should not be part of `.lede`, but part of the page
 - [ ] There should be more than one watercolor splash
-- [ ] Make the lede shortcode accept a class to control watercolor, or if I change them to be part of the page, have the page accept a param to determine which one to use
+- [ ] Make the lede shortcode accept a class to control watercolor, or if I change them to be part of the page, have the page accept a param to determine which one to use. Or make it random maybe? (In general, some more randomness on this site would be nice)
 - [ ] Put smaller splashes of color on headings? Try it out
 - [ ] Style code blocks better
 - [ ] Change the appearance of selections
@@ -83,7 +83,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 
 - [ ] Favicons
 - [ ] 404 page
-- [ ] RSS feed (Do people still use these?)
+- [ ] RSS feed (maybe?)
 - [ ] Figure out image hosting situation.
 
 ## Learn
