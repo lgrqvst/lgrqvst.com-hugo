@@ -1,53 +1,53 @@
 // min-width
 @mixin min($width) {
-  @media screen and (min-width: #{$width / 16} + em) {
+  @media screen and (min-width: #{$width / 16}em) {
     @content;
   }
 }
 
 // max-width
 @mixin max($width) {
-  @media screen and (max-width: #{$width / 16} + em) {
+  @media screen and (max-width: #{$width / 16}em) {
     @content;
   }
 }
 
 // min-width
 @mixin minh($height) {
-  @media screen and (min-height: #{$height / 16} + em) {
+  @media screen and (min-height: #{$height / 16}em) {
     @content;
   }
 }
 
 // max-width
 @mixin maxh($height) {
-  @media screen and (max-height: #{$height / 16} + em) {
+  @media screen and (max-height: #{$height / 16}em) {
     @content;
   }
 }
 
 @mixin minboth($width, $height) {
-  @media screen and (min-width: #{$width / 16} + em) and (min-height: #{$height / 16} + em) {
+  @media screen and (min-width: #{$width / 16}em) and (min-height: #{$height / 16}em) {
     @content;
   }
 }
 
 @mixin maxboth($width, $height) {
-  @media screen and (max-width: #{$width / 16} + em) and (max-height: #{$height / 16} + em) {
+  @media screen and (max-width: #{$width / 16}em) and (max-height: #{$height / 16}em) {
     @content;
   }
 }
 
 // min-width and max-width
 @mixin minmax($width, $width) {
-  @media only screen and (min-width: #{$width / 16} + em) and (max-width: #{$width / 16} + em) {
+  @media only screen and (min-width: #{$width / 16}em) and (max-width: #{$width / 16}em) {
     @content;
   }
 }
 
 // min-height and max-height
 @mixin minmaxh($height, $height) {
-  @media only screen and (min-height: #{$height / 16} + em) and (max-height: #{$height / 16} + em) {
+  @media only screen and (min-height: #{$height / 16}em) and (max-height: #{$height / 16}em) {
     @content;
   }
 }

@@ -1,35 +1,38 @@
-div.temporary-home-page-menu {
+.temporary-home-page-menu {
   grid-column: 1 / -1;
   padding: 0.5rem;
-  background: black;
-  font-size: 1.5em;
-
+  background: #000;
   font-family: $font_title;
+  font-size: 1.5em;
   font-weight: 300;
   text-transform: uppercase;
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
   }
 
   a {
     display: block;
-    padding: 0.5rem 0.5rem;
     margin: 0 0.5rem 0 0;
+    padding: 0.5rem;
     background: none;
-    color: white;
-    text-shadow: 0 0 0 rgba(255,255,0,1), 0 0 0 rgba(0,255,255,1), 0 0 0 rgba(255,0,255,1);
+    color: #fff;
+    text-shadow: 0 0 0 rgba(255, 255, 0, 1), 0 0 0 rgba(0, 255, 255, 1),
+      0 0 0 rgba(255, 0, 255, 1);
     transition: 0.75s;
+
     &:hover {
       color: transparent;
+      text-shadow: 0.25rem -0.15rem 0 rgba(255, 255, 0, 1),
+        0.3rem 0.2rem 0 rgba(0, 255, 255, 1),
+        -0.25rem -0.05rem 0 rgba(255, 0, 255, 1);
       transition: 0.25s;
-      text-shadow: 0.25rem -0.15rem 0 rgba(255,255,0,1), 0.3rem 0.2rem 0 rgba(0,255,255,1), -0.25rem -0.05rem 0 rgba(255,0,255,1);
     }
   }
   @include min(640) {
