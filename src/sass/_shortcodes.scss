@@ -9,12 +9,12 @@
 .contact-form-input__input--text,
 .contact-form-input__input--email,
 .contact-form-input__input--textarea {
-  background: #fff;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
   border: 0;
   border-radius: 0.25em;
-  display: block;
-  padding: 0.5em;
-  width: 100%;
+  background: #fff;
 }
 
 .contact-form-input__input--textarea {
@@ -22,12 +22,12 @@
 }
 
 .contact-form-input__input--submit {
-  background: $contrastColorPink;
+  padding: 0.25em 1em;
   border: 0;
   border-radius: 0.25em;
+  background: $contrastColorPink;
   color: #fff;
   font-size: 1.25em;
-  padding: 0.25em 1em;
   transition: 0.25s;
 
   &:hover {

@@ -28,7 +28,7 @@
       {{ with .Param "headerimage_src" }}
         <figure>
           <img src="{{ . }}" alt="{{ $headerimage_description }}">
-          <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
+          <figcaption class="headerimage__credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
         </figure>
       {{ end }}
       <h3><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h3>
@@ -68,7 +68,7 @@
       {{ with .Param "headerimage_src" }}
         <figure>
           <img src="{{ . }}" alt="{{ $headerimage_description }}">
-          <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
+          <figcaption class="headerimage__credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
         </figure>
       {{ end }}
       <h3><a href="{{ .Permalink }}">{{ .Title }}{{ with .Param "subtitle" }}&mdash;<span class="subtitle">{{ . }}</span>{{ end }}</a></h3>

@@ -1,37 +1,32 @@
 {{ define "main" }}
 
-{{ with .Content }}
-  <div class="well">
-    {{.}}
-  </div>
+{{ with.Content }}
+<div class="well">{{.}}</div>
 {{ end }}
 
-{{ range .Paginator.Pages }}
-  {{ if not .Params.hideinlisting }}
-    <div class="post">
-      {{ $headerimage_description := .Param "headerimage_description" }}
-      {{ $headerimage_credit := .Param "headerimage_credit" }}
-      {{ $headerimage_credit_url := .Param "headerimage_credit_url" }}
-      {{ with .Param "headerimage_src" }}
-        <figure>
-          <img src="{{ . }}" alt="{{ $headerimage_description }}">
-          <figcaption class="headerimage_credit"><a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a></figcaption>
-        </figure>
-      {{ end }}
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <div class="summary">
-        {{ .Summary }}
-      </div>
-
-      {{ if .Truncated }}
-        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-        <div>
-          <a href="{{ .Permalink }}" class="readmore h5">Read More &raquo;</a>
-        </div>
-      {{ end }}
-    </div>
+{{ range.Paginator.Pages }} {{ if not .Params.hideinlisting }}
+<div class="post">
+  {{ $headerimage_description := .Param "headerimage_description" }}
+  {{ $headerimage_credit := .Param "headerimage_credit" }}
+  {{ $headerimage_credit_url := .Param "headerimage_credit_url" }} {{ with .Param "headerimage_src" }}
+  <figure>
+    <img src="{{ . }}" alt="{{ $headerimage_description }}" />
+    <figcaption class="headerimage__credit">
+      <a href="{{ $headerimage_credit_url }}" target="_blank">{{ $headerimage_credit }}</a>
+    </figcaption>
+  </figure>
   {{ end }}
-{{ end }}
+  <h2>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <div class="summary">{{ .Summary }}</div>
+
+  {{ if .Truncated }}
+  <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+  <div><a href="{{ .Permalink }}" class="readmore h5">Read More &raquo;</a></div>
+  {{ end }}
+</div>
+{{ end }} {{ end }}
 
 {{ partial "pagination.html" . }}
 

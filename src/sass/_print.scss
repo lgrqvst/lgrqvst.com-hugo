@@ -11,8 +11,8 @@
   *::first-letter,
   *::first-line {
     background: transparent !important;
-    box-shadow: none !important;
     color: #000 !important; /* Black prints faster:
+    box-shadow: none !important;
                                    http://www.sanbeiji.com/archives/953 */
     text-shadow: none !important;
   }

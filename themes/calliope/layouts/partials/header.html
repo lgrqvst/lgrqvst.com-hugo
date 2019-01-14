@@ -30,7 +30,7 @@
   </div>
 
   {{ if isset .Params "headerimage_credit" }}
-    <div class="headerimage_credit">
+    <div class="headerimage__credit">
       <a href="{{ if isset .Params "headerimage_credit_url" }}{{ $headerimage_credit_url }}{{ else }}javascript:;{{ end }}" target="_blank">
         {{ $headerimage_credit }}
       </a>
