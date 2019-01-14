@@ -85,6 +85,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] 404 page
 - [ ] RSS feed (maybe?)
 - [ ] Figure out image hosting situation.
+- [ ] Add image gulp optimization not just for theme images
 
 ## Learn
 
