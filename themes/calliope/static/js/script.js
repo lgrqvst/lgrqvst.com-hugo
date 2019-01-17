@@ -91,9 +91,8 @@
   !*** ./src/js/script.js ***!
   \**************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
 
 
 /***/ }),
@@ -105,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/johan/Sites/lgrqvst.com/src/js/script.js */"./src/js/script.js");
+module.exports = __webpack_require__(/*! /Users/tryhard/Johan/lgrqvst/lgrqvst.com/src/js/script.js */"./src/js/script.js");
 
 
 /***/ })
