@@ -80,6 +80,15 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [x] On lists, add header images where available
 - [ ] On e.g. category listings, distinguish between `posts` and `art`
 - [ ] On art pages, display themes, motifs, &c.
+- [ ] Standardize size of header images
+
+## SEO
+
+- [ ] Unique H1 headings
+- [ ] Description meta
+- [ ] Canonical URLs
+- [ ] Sitemap
+- [ ] robots.txt
 
 ## Other
 
@@ -88,6 +97,8 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] RSS feed (maybe?)
 - [ ] Figure out image hosting situation.
 - [ ] Add image gulp optimization not just for theme images
+- [ ] Load fonts in `<link>` instead of `@import`
+- [ ] Mobile app support for funsies
 
 ## Learn
 
