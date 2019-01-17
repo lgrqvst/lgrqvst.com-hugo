@@ -22,7 +22,7 @@ import del from 'del';
 const PRODUCTION = yargs.argv.prod;
 
 export const css = () =>
-  src('src/sass/styles.scss')
+  src('themes/calliope/src/css/styles.scss')
     .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulpif(PRODUCTION, postcss([autoprefixer])))
@@ -31,7 +31,7 @@ export const css = () =>
     .pipe(dest('themes/calliope/static/css'));
 
 export const js = () =>
-  src(['src/js/script.js'])
+  src(['themes/calliope/src/js/script.js'])
     .pipe(named())
     .pipe(
       webpack({
@@ -58,7 +58,7 @@ export const js = () =>
     .pipe(dest('themes/calliope/static/js'));
 
 export const images = () =>
-  src('src/img/**/*.{jpg,jpeg,png,svg,gif}')
+  src('themes/calliope/src/img/**/*.{jpg,jpeg,png,svg,gif}')
     .pipe(
       gulpif(
         PRODUCTION,
@@ -95,7 +95,7 @@ export const images = () =>
 export const clean = () => del(['themes/calliope/static']);
 
 export const watchForChanges = () => {
-  watch('src/sass/**/*.scss', css);
+  watch('src/css/**/*.scss', css);
   watch('src/js/**/*.js', js);
   watch('src/img/**/*.{jpg,jpeg,png,svg,gif}', images);
 };

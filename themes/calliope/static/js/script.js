@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/script.js":
-/*!**************************!*\
-  !*** ./src/js/script.js ***!
-  \**************************/
+/***/ "./themes/calliope/src/js/script.js":
+/*!******************************************!*\
+  !*** ./themes/calliope/src/js/script.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -98,13 +98,13 @@
 /***/ }),
 
 /***/ 0:
-/*!********************************!*\
-  !*** multi ./src/js/script.js ***!
-  \********************************/
+/*!************************************************!*\
+  !*** multi ./themes/calliope/src/js/script.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/tryhard/Johan/lgrqvst/lgrqvst.com/src/js/script.js */"./src/js/script.js");
+module.exports = __webpack_require__(/*! /Users/tryhard/Johan/lgrqvst/lgrqvst.com/themes/calliope/src/js/script.js */"./themes/calliope/src/js/script.js");
 
 
 /***/ })
