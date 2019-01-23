@@ -25,7 +25,7 @@ techniques:
   - Halftone
   - Collage
 comments: true
-headerimage_src: /img/art/illustration/before-the-stone-god-header.jpg
+headerimage_src: /img/art/illustration/header-before-the-stone-god.jpg
 headerimage_credit:
 headerimage_credit_url:
 headerimage_description: A close-up of the main artwork.

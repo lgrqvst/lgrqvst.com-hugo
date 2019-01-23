@@ -5,23 +5,23 @@ date: 2018-09-11T17:57:09+09:00
 publishDate: 2018-09-11T17:57:09+09:00
 draft: false
 categories:
-- Science Fiction
+  - Science Fiction
 tags:
-- Ship systems
-- Space ships
+  - Ship systems
+  - Space ships
 motifs:
-- Space ships
-- Darkness
-- Silence
+  - Space ships
+  - Darkness
+  - Silence
 themes:
-- Loneliness
-- Isolation
-- Silence
-- Madness
+  - Loneliness
+  - Isolation
+  - Silence
+  - Madness
 colors:
 techniques:
 comments: true
-headerimage_src: /img/art/short-story/24-hours-of-silence.jpg
+headerimage_src: /img/art/short-story/header-24-hours-of-silence.jpg
 headerimage_credit:
 headerimage_credit_url:
 headerimage_description: A starfield
