@@ -81,6 +81,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] On e.g. category listings, distinguish between `posts` and `art`
 - [ ] On art pages, display themes, motifs, &c.
 - [ ] Standardize size of header images
+- [ ] Maybe only show the latest three posts on the top page instead of four (and same for `art`)
 
 ## SEO
 
