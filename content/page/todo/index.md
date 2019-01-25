@@ -63,6 +63,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] Style code blocks better
 - [ ] Change the appearance of selections
 - [ ] Maybe restyle `.lede`?
+- [ ] Remove animation from headings. Why did I put that in in the first place??
 
 ## Posts
 
