@@ -41,6 +41,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] Contrast between text and background for readability
 - [ ] Make sure reader mode works
 - [ ] Create a fallback for browsers that don't support grid
+- [ ] Skip to main content link
 
 ## Footer
 
