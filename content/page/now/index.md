@@ -23,4 +23,4 @@ This is what I'm into right now:
 - Trying to build a habit of daily sketching
 - RPGs
 
-Currently reading: _Ninefox Gambit_ by Yoon Ha Lee
+Currently reading: _Raven Stratagem_ by Yoon Ha Lee
