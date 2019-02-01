@@ -65,6 +65,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] Change the appearance of selections
 - [ ] Maybe restyle `.lede`?
 - [ ] Remove animation from headings. Why did I put that in in the first place??
+- [ ] Add some kind of styling to content added to a post after it's been published
 
 ## Posts
 
