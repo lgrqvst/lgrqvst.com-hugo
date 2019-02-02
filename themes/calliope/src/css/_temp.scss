@@ -23,14 +23,16 @@
     padding: 0.5rem;
     background: none;
     color: #fff;
-    text-shadow: 0 0 0 rgba(255, 255, 0, 1), 0 0 0 rgba(0, 255, 255, 1), 0 0 0 rgba(255, 0, 255, 1);
-    transition: 0.75s;
+    text-shadow: 0 0 0 rgba(255, 255, 0, 1), 0 0 0 rgba(0, 255, 255, 1),
+      0 0 0 rgba(255, 0, 255, 1);
+    transition: text-shadow 0.75s, color 0.75s;
 
     &:hover {
       color: transparent;
-      text-shadow: 0.25rem -0.15rem 0 rgba(255, 255, 0, 1), 0.3rem 0.2rem 0 rgba(0, 255, 255, 1),
+      text-shadow: 0.25rem -0.15rem 0 rgba(255, 255, 0, 1),
+        0.3rem 0.2rem 0 rgba(0, 255, 255, 1),
         -0.25rem -0.05rem 0 rgba(255, 0, 255, 1);
-      transition: 0.25s;
+      transition: text-shadow 0.25s, color 0.25s;
     }
   }
   @include min(640) {

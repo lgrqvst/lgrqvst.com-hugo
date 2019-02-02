@@ -61,11 +61,12 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] There should be more than one watercolor splash
 - [ ] Make the lede shortcode accept a class to control watercolor, or if I change them to be part of the page, have the page accept a param to determine which one to use. Or make it random maybe? (In general, some more randomness on this site would be nice)
 - [ ] Put smaller splashes of color on headings? Try it out
-- [ ] Style code blocks better
+- [x] Style code blocks better
 - [ ] Change the appearance of selections
 - [ ] Maybe restyle `.lede`?
-- [ ] Remove animation from headings. Why did I put that in in the first place??
-- [ ] Add some kind of styling to content added to a post after it's been published
+- [x] Remove animation from headings. Why did I put that in in the first place??
+- [ ] Add some kind of styling to content added to a post after it's been published (shortcode?)
+- [ ] The stylesheets are a mess. Maybe rewrite? At some point?
 
 ## Posts
 
@@ -85,6 +86,7 @@ Here's some of what needs doing to bring this ship to port. There's probably mor
 - [ ] On art pages, display themes, motifs, &c.
 - [ ] Standardize size of header images
 - [ ] Maybe only show the latest three posts on the top page instead of four (and same for `art`)
+- [ ] Consider sorting posts according to year
 
 ## SEO
 

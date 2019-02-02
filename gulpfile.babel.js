@@ -95,9 +95,9 @@ export const images = () =>
 export const clean = () => del(['themes/calliope/static']);
 
 export const watchForChanges = () => {
-  watch('src/css/**/*.scss', css);
-  watch('src/js/**/*.js', js);
-  watch('src/img/**/*.{jpg,jpeg,png,svg,gif}', images);
+  watch('themes/calliope/src/css/**/*.scss', css);
+  watch('themes/calliope/src/js/**/*.js', js);
+  watch('themes/calliope/src/img/**/*.{jpg,jpeg,png,svg,gif}', images);
 };
 
 export const dev = series(clean, parallel(css, js, images), watchForChanges);
