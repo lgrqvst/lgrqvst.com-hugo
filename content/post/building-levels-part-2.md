@@ -1,5 +1,5 @@
 ---
-title: Building Levels Part 2
+title: Building Levels, Part 2
 subtitle: The Level Description Matrix
 date: 2019-02-02T17:11:50+09:00
 publishDate: 2019-02-02T17:11:50+09:00
@@ -12,7 +12,7 @@ tags:
   - Level Design
   - The Matrix has you
 comments: true
-headerimage_src: /img/
+headerimage_src: /img/post/header-ravr-notes-1.jpg
 headerimage_credit:
 headerimage_credit_url:
 headerimage_description:
