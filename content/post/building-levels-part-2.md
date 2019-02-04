@@ -3,7 +3,7 @@ title: Building Levels, Part 2
 subtitle: The Level Description Matrix
 date: 2019-02-02T17:11:50+09:00
 publishDate: 2019-02-02T17:11:50+09:00
-draft: true
+draft: false
 categories:
   - Game Development
   - RAVr
