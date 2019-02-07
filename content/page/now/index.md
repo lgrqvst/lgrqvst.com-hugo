@@ -17,10 +17,11 @@ This is what I'm into right now:
 - Learning React
 - Making the best of 2019
 - Getting back into photography
+- Indie game design
 - Leftism
 - Anarchism
 - DIY
 - Trying to build a habit of daily sketching
 - RPGs
 
-Currently reading: _Raven Stratagem_ by Yoon Ha Lee
+Currently reading: _Revenant Gun_ by Yoon Ha Lee
