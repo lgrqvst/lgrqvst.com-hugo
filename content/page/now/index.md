@@ -24,4 +24,4 @@ This is what I'm into right now:
 - Trying to build a habit of daily sketching
 - RPGs
 
-Currently reading: _Revenant Gun_ by Yoon Ha Lee
+Currently reading: _Caliban and the Witch: Women, the Body and Primitive Accumulation_ by Silvia Federici
