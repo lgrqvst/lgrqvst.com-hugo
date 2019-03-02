@@ -3,33 +3,22 @@ title: Ship Design
 subtitle:
 date: 2019-02-22T17:23:04+09:00
 publishDate: 2019-02-22T17:23:04+09:00
-draft: true
+draft: false
 categories:
-- Game Development
-- RAVr
+  - Game Development
+  - RAVr
 tags:
-- RAVr
-- space ships
-- vehicle design
+  - RAVr
+  - space ships
+  - vehicle design
+  - procreate
+  - affinity designer
 comments: true
 headerimage_src: /img/post/ravr-ship-design/header.jpg
 headerimage_credit:
 headerimage_credit_url:
-headerimage_description:
+headerimage_description: A sideways, closeup shot of an iPad displaying thumbnails of various designs. Apple Pencil resting on top.
 ---
-
-<!--
-Summary of the images I want:
-- Photograph of the iPad with Procreate open and the Apple Pencil resting on top
-- The original design, large version
-- The original design, different states collage
-- Initial designs collage, 4-6 designs
-- Continued designs collage, 4-6 designs
-- More designs 3-4
-- Final design from Procreate
-- Final design from Affinity Designer
-- mp4 or gif from After Effects (hosted where? Gfycat? Somewhere else?)
--->
 
 I knew from the start that I didn't want to stray too far from the design I made for the original experiment (v5 in the GitHub repo), but I wanted to elaborate on a few details, and I wanted to add more animatable details, and some visual indicators to the ship itself.<!--more-->
 
