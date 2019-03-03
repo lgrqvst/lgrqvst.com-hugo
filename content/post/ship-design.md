@@ -1,8 +1,8 @@
 ---
 title: Ship Design
 subtitle:
-date: 2019-02-22T17:23:04+09:00
-publishDate: 2019-02-22T17:23:04+09:00
+date: 2019-03-03T12:30:00+09:00
+publishDate: 2019-03-03T12:30:00+09:00
 draft: false
 categories:
   - Game Development
