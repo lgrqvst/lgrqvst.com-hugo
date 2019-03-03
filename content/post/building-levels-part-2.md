@@ -9,7 +9,7 @@ categories:
   - RAVr
 tags:
   - RAVr
-  - Level Design
+  - level design
   - The Matrix has you
 comments: true
 headerimage_src: /img/post/header-ravr-notes-1.jpg
