@@ -14,14 +14,16 @@ This is what I'm into right now:
 
 <!--more-->
 
-- Learning React
+- React and Gatsby
 - Making the best of 2019
 - Getting back into photography
-- Indie game design
+- Indie game design with JavaScript and canvas
+- Tabletop RPG design
 - Leftism
 - Anarchism
 - DIY
 - Trying to build a habit of daily sketching
-- RPGs
+- Cyberpunk
+- Moving towards a vegan diet
 
 Currently reading: _Caliban and the Witch: Women, the Body and Primitive Accumulation_ by Silvia Federici
