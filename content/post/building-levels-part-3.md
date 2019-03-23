@@ -23,9 +23,9 @@ headerimage_description:
 
 When the level is loaded, I check the starting position of the player avatar, calculate which parts of the level - which chunks - are supposed to be visible, generate those, and add them to the stage.
 
-<figure class="align-middle"><div style='position:relative; padding-bottom:calc(59.88% + 44px)'><iframe src='https://gfycat.com/ifr/RealPoliteLadybird' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div></figure>
-
-Every chunk is just a randomly determined color at this point. Just making sure my basic idea worked.
+<figure class="align-middle"><div style='position:relative; padding-bottom:calc(59.88% + 44px)'><iframe src='https://gfycat.com/ifr/RealPoliteLadybird' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+<figcaption><h4>Every chunk is just a randomly determined color at this point. Just making sure my basic idea worked.</h4></figcaption>
+</figure>
 
 Every frame update, I check the current scroll position of the stage, and make the calculation again. If there are new chunks that should be visible, those are added to the stage. If there are others that are no longer visible, those are removed.
 
