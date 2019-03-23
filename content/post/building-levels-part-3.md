@@ -1,25 +1,26 @@
 ---
 title: Building Levels, Part 3
 subtitle:
-date: 2019-03-23T16:44:00+09:00
-publishDate: 2019-03-23T16:44:00+09:00
-draft: true
+date: 2019-03-23T18:00:00+09:00
+publishDate: 2019-03-23T18:00:00+09:00
+draft: false
 categories:
-- Game Development
-- RAVr
+  - Game Development
+  - RAVr
 tags:
-- RAVr
-- level design
+  - RAVr
+  - level design
 comments: true
 headerimage_src: /img/post/building-levels-3/header.png
 headerimage_credit:
 headerimage_credit_url:
-headerimage_description: 
+headerimage_description:
 ---
 
 {{% lede %}}Lots of progress lately actually, most of it pertaining to levels and the rendering thereof. The way I have it set up right now, is I have an object called stage (representing the viewport, or the visible contents of the level) which holds arrays with all the objects that are going to be rendered. It also holds values for the size of the viewport and the scroll position of the stage, relative to the size of the entire level. Every frame, the objects inside the arrays are drawn.{{% /lede %}}
 
 <!--more-->
+
 When the level is loaded, I check the starting position of the player avatar, calculate which parts of the level - which chunks - are supposed to be visible, generate those, and add them to the stage.
 
 <figure class="align-middle"><div style='position:relative; padding-bottom:calc(59.88% + 44px)'><iframe src='https://gfycat.com/ifr/RealPoliteLadybird' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div></figure>
@@ -32,7 +33,7 @@ I don't know if there are any tangible performance benefits to doing it this way
 
 ## The _Real Line_
 
-I've also made some progress with the actual rendering of the level chunks. When a chunk is generated, it is fed a descriptor and x, y coordinates. The descriptor is something like `_4` or `-36` or `|46`, and the x, y coordinates are simply the chunk position in the level matrix. The coordinates are used with the stage scroll position to determine where on the screen to draw the chunk, and the descriptor is used to generate what I've been calling the _real line_ of the chunk. 
+I've also made some progress with the actual rendering of the level chunks. When a chunk is generated, it is fed a descriptor and x, y coordinates. The descriptor is something like `_4` or `-36` or `|46`, and the x, y coordinates are simply the chunk position in the level matrix. The coordinates are used with the stage scroll position to determine where on the screen to draw the chunk, and the descriptor is used to generate what I've been calling the _real line_ of the chunk.
 
 The _real line_ represents the general contour of the ground in the chunk, and I hope I will eventually be able to use it for collision detection. Getting into specifics, the line is a Bézier curve that is based on the values received in the chunk descriptor, with a bit of randomness added in (determined at the point the chunk is generated—so as not to cause the terrain to change shape every frame). For the ones I've built so far (at the time of this writing), it's been easy to define a line with just a start point, an end point and two control points.
 
