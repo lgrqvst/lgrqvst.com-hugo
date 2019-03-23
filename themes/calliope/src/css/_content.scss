@@ -187,8 +187,7 @@ main {
   padding: 0.8em;
   background: rgba(255, 255, 255, 0.5);
   font-size: 1.25em;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1),
-    0 0 2rem rgba(255, 255, 255, 0.33) inset;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1), 0 0 2rem rgba(255, 255, 255, 0.33) inset;
 
   &::before {
     content: '';
@@ -341,7 +340,8 @@ main {
   }
 }
 
-.kind-section {
+.kind-section,
+.kind-taxonomy {
   .post {
     figure {
       position: relative;
