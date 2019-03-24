@@ -1,6 +1,6 @@
 ---
 title: Building Levels, Part 3
-subtitle:
+subtitle: Rendering
 date: 2019-03-23T18:00:00+09:00
 publishDate: 2019-03-23T18:00:00+09:00
 draft: false
